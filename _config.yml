@@ -12,7 +12,7 @@ navbar-links:
 
   Home: "index"
   About: "/pages/about"
-  Projects: "/pages/projects.md"
+  Projects: "/pages/projects"
     # - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
     # - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
