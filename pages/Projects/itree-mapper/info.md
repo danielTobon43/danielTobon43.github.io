@@ -9,11 +9,12 @@ This is an intelligent farming project about a real-scaled point cloud represent
 </div>
 
 
+
 1.	[3D mapping](#1.-3D-mapping)
 2.	[Scale factor estimation](#2.-Scale-factor-estimation)
 3.	[Segmentation](#3.-Segmentation)
 4.	[Features estimation](#4.-Features-estimation)
-5.  [Results](#5. Results)
+5.  [Results](#5.	Results)
 
 <img src="/pages/Projects/itree-mapper/pipeline.png"
      alt="Markdown Monster icon"
@@ -86,7 +87,7 @@ Each axis of the coordinate system associated with the 3D model represents a pro
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /><br>
 
-### 5.	Results
+## 5.	Results
 <div style="text-align: justify ">
 The system was evaluated using data collected from 5 trees with a single stem, as illustrated in Figure 38, in a rural area of ​​the city of Cali, Colombia. For tree 1 80 photographs were taken, for tree 2 66 photographs were taken; From tree 3, 74 photographs were taken and from trees 4 and 5, 65 and 94 photographs were taken respectively. In terms of precision, each characteristic of interest was evaluated with data measured in the field (ground truth). All the images were captured with a Motorola C6 cell phone, whose camera has a resolution of 3264x2448 pixels. The focal length and exposure parameters were set using an Android application called: OpenCamera, in such a way that they were not automatically modified by the camera. The average 3D reconstruction time was 50 minutes per tree, including the densification process. The chamber calibration parameters were obtained using a checkerboard pattern. For the data collection process, the standard techniques of forest censuses were used: the diameter at breast height (DBH) was taken at 1.33 m above the ground. A distance measuring laser was used to measure trunk height and total height (see section 4.1). All results in this document were generated on a 2-core HP Pavillion al005la running Ubuntu LTS 16.04.3. The libraries were used: PCL version 1.8.1.99, OpenCV version 3.4.1, TinyXML2, DBScan, CMVS-PMVS, OpenMVG and the entire system was programmed in the C ++ language. The results obtained in the experimental procedure are detailed below.
 </div>
