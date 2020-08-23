@@ -9,7 +9,11 @@ author: Daniel Tobon
 # --- List of links in the navigation bar --- #
 
 navbar-links:
+<<<<<<< HEAD
   About Me: "aboutme.md"
+=======
+  About Me: "/_pages/aboutme.md"
+>>>>>>> 413e7d6236ec1a07dcea0618f8e2bae25e50fa86
   Projects:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
