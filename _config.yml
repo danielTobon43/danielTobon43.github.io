@@ -11,15 +11,15 @@ author: Daniel Tobon
 navbar-links:
 
   Home: "index"
-  About: "/pages/about"
-  Projects: "/pages/projects"
+  About: "/pages/About/about"
+  Projects: "/pages/Projects/projects"
     # - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
     # - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
-  Datasets: ""
-  Contact: ""
+  Datasets: "/pages/Datasets/datasets"
+  Contact: "/pages/Contact/contact"
 
 # --- Logo --- #
 
