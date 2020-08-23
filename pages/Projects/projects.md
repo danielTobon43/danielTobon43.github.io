@@ -7,7 +7,6 @@ subtitle:
 In this section you will find the documentation related to each project that I have worked. 
 </div>
 
-<div style="text-align: justify ">
 - [itree-mapper](./itree-mapper/info.md): Development of a robotic perception system to estimate geometric features of an individual tree
 - [itree-mapper](./itree-mapper/itree-mapper.md): Interface framework for a ZR300 Intel Realsense camera in PCL and ROS
 - [itree-mapper](./itree-mapper/itree-mapper.md): Data analytics and Industrial Internet of Things project for a human-machine interface 
@@ -18,4 +17,3 @@ In this section you will find the documentation related to each project that I h
 - [itree-mapper](./itree-mapper/itree-mapper.md): Gui for select image pixel reference for iTree3DMap. This program uses the control point registration GUI of OpenMVG as base.
 - [itree-mapper](./itree-mapper/itree-mapper.md): C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
 - [itree-mapper](./itree-mapper/itree-mapper.md): A simple structure from motion pipeline for 3D incremental reconstruction
-</div>
