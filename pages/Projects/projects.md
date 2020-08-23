@@ -8,7 +8,7 @@ In this section you will find the documentation related to each project that I h
 </div>
 
 <div style="text-align: justify ">
-- [itree-mapper](./itree-mapper/itree-mapper.md): Development of a robotic perception system to estimate geometric features of an individual tree
+- [itree-mapper](./itree-mapper/info.md): Development of a robotic perception system to estimate geometric features of an individual tree
 - [itree-mapper](./itree-mapper/itree-mapper.md): Interface framework for a ZR300 Intel Realsense camera in PCL and ROS
 - [itree-mapper](./itree-mapper/itree-mapper.md): Data analytics and Industrial Internet of Things project for a human-machine interface 
 - [itree-mapper](./itree-mapper/itree-mapper.md): RFID project to read an animal tag using the RFIDRW-E-TTL with a nRF5 SDK 16.0
