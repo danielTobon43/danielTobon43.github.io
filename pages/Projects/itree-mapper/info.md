@@ -5,19 +5,20 @@ subtitle:
 cover-img: "/pages/Projects/itree-mapper/logo.png"
 ---
 <div style="text-align: justify ">
-This is an intelligent farming project about a real-scaled point cloud representation of an individual tree built from an RGB monocular camera using computer vision techniques such as structure from motion and point cloud processing. Official repository: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</a> It is composed of 3 modules: 
-</div><br>
+This is an intelligent farming project about a real-scaled point cloud representation of an individual tree built from an RGB monocular camera using computer vision techniques such as structure from motion and point cloud processing. Official repository: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</a> 
+</div>
 
-1.	3D Mapping
-2.	Scale factor estimation
-3.	Segmentation
-4.	Features estimation
+1.	[3D mapping](#3D-Mapping)
+2.	[Scale factor estimation](#Scale-factor-estimation)
+3.	[Segmentation](#Segmentation)
+4.	[Features estimation](#Features-estimation)
+5.  [Results](#Results)
 
 <img src="/pages/Projects/itree-mapper/pipeline.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
-## 1. 3D Mapping
+## 1. 3D mapping
 <div style="text-align: justify ">
  This stage is responsible for generating the structural geometry of the tree in a digital 3D representation. OpenMVG (Open Multiple View Geometry) is an Open Source library of SFM-MVS which is quite optimized with multiprocessing algorithms. It has an integrated thread optimization system that allows the execution of multiple processes, making it a fairly robust and efficient program. <br><br>
 
@@ -65,7 +66,7 @@ The segmentation procedure consists of two steps: the segmentation of the trunk 
 Now, since the crown of the tree is at a certain height from the ground, it is possible to define a break value that allows separating its location. This threshold value was derived based on the mean value of the total trunk height. PassThrough filter allows you to remove points that are inside or outside a user-defined range. According to this, all points that are below the average height of the trunk will be eliminated, which allows to eliminate the ground plane. In addition, an outlier filter (StatisticalOutlierRemoval filter) was used to remove noisy data sets using statistical analysis techniques.<br><br>
 
 Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (DBScan), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
-</div>
+</div><br>
 
 ## 4.	Features estimation
 <div style="text-align: justify ">
@@ -82,7 +83,7 @@ Each axis of the coordinate system associated with the 3D model represents a pro
 
 <img src="/pages/Projects/itree-mapper/percentage-canopy.png"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" /> 
+     style="float: left; margin-right: 10px;" /><br>
 
 ### Results
 <div style="text-align: justify ">
