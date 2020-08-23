@@ -1,7 +1,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Portfolio
+title: Main Page
 
 # Your name to show in the footer
 author: Daniel Tobon
@@ -9,7 +9,7 @@ author: Daniel Tobon
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "./_pages/aboutme.md"
+  About Me: "aboutme.md"
   Projects:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
