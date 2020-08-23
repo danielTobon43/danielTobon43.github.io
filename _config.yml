@@ -10,7 +10,7 @@ author: Daniel Tobon
 
 navbar-links:
 
-  Home: "index"
+  Home: ""
   About: "/pages/About/about"
   Projects: "/pages/Projects/projects"
     # - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
