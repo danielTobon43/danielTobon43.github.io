@@ -13,9 +13,8 @@ navbar-links:
   # About Me: "aboutme"
   About Me: "/pages/aboutme"
   Projects:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    #IMaR Technology Gateway:
-      - first project: "https://beautifuljekyll.com"
+    - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
+    - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
