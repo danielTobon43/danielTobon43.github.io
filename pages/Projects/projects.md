@@ -1,16 +1,13 @@
 ---
 layout: page
 title: Projects
-subtitle: Why you'd want to go on a date with me
+subtitle: 
 ---
+<div style="text-align: justify ">
+**Development of a robotic perception system for geometric feature estimation of an individual tree.**
+This is a C++ project to build a point cloud representation of an object using a ZR300 Intel realsense camera with RGB and depth data. The program uses PCL as a framework to read data and display points. On the other hand, I tested the camera with the middleware ROS and RVIZ to compare the best framework for the project in robotics applications.
+</div>
 
-My name is Inigo Montoya. I have the following qualities:
-
-- I rock a great mustache
-- I'm extremely loyal to my family
-
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<img src="/assets/img/pipeline.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
