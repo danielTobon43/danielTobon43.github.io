@@ -1,7 +1,7 @@
 # --- Required options --- #
 
 # Name of website
-title: Main Page
+title: ""
 
 # Your name to show in the footer
 author: Daniel Tobon
@@ -10,14 +10,16 @@ author: Daniel Tobon
 
 navbar-links:
 
-  # About Me: "aboutme"
-  About Me: "/pages/aboutme"
+  Home: "index"
+  About: "/pages/aboutme"
   Projects:
-    - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
-    - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
+    # - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
+    # - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
+  Datasets: ""
+  Contact: ""
 
 # --- Logo --- #
 
