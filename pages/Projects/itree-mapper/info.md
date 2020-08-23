@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Itree-mapper
+title: 
 subtitle: 
 cover-img: "/pages/Projects/itree-mapper/logo.png"
 ---
