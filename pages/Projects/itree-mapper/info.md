@@ -28,10 +28,10 @@ This is an intelligent farming project about a real-scaled point cloud represent
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
 
- ## 2.	Scale factor estimation
+## 2.	Scale factor estimation
 <div style="text-align: justify ">
-The calculation of the scale factor is crucial for dendrometric estimation, since the objective of this project is to directly use the 3D model of a tree to calculate these characteristics. This factor is a quantity that allows you to transform the size of the 3D map to a real size. The procedure is similar to that proposed <a href="https://openmvg.readthedocs.io/en/latest/software/ui/SfM/control_points_registration/GCP/">Your link</a> with the difference that the scale factor is obtained automatically and not using a graphical interface.
-</div>
+The calculation of the scale factor is crucial for dendrometric estimation, since the objective of this project is to directly use the 3D model of a tree to calculate these characteristics. This factor is a quantity that allows you to transform the size of the 3D map to a real size. The procedure is similar to that proposed <a href="https://openmvg.readthedocs.io/en/latest/software/ui/SfM/control_points_registration/GCP/">here:</a> with the difference that the scale factor is obtained automatically and not using a graphical interface.
+</div><br>
 
 <div style="text-align: justify ">
 In geometry, a scale factor is obtained by dividing two straight line segments of two figures with different sizes. Following this logic, it is necessary to obtain two segments to estimate a scale factor; a known segment in the 3D model and another in the real object. Considering that the tree trunk is usually straight, a relationship can be established between a segment of the real trunk and a segment in the 3D model.
@@ -55,5 +55,48 @@ To achieve 3D-2D projection in the image plane of interest, it is necessary to c
 </div>
 
 <img src="/pages/Projects/itree-mapper/scale-result.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" /> 
+
+## 3.	Segmentation
+<div style="text-align: justify ">
+In this stage, we seek to classify the 3D points associated with the trunk and crown of the tree in such a way that there are two representations of point clouds. PCL is an open source library for point cloud management and processing with a wide variety of tools and algorithms specialized in 3D point segmentation.<br><br>
+
+The segmentation procedure consists of two steps: the segmentation of the trunk and the segmentation of the crown of the tree. There is a segmentation algorithm for cylindrical objects called: Cylinder Model Segmentation that allows to find and classify the points of the trunk that are in the 3D model. This algorithm is an iterative method used to estimate the parameters of a mathematical model from a set of data containing outliers. This algorithm is based on the one published by Fischler and Bolles in 1981; Using RANSAC, it assumes that all the data we are analyzing is made up of typical values ​​and outliers. Typical or normal values ​​can be grouped by a model with a particular set of parameters, such as: search radius limit, normal distance, number of iterations, among others, while outliers do not fit that model under no circumstances. For this reason, those points that share a set of characteristics within a "cylindrical" model will be considered as points of the tree trunk.<br><br>
+
+Now, since the crown of the tree is at a certain height from the ground, it is possible to define a break value that allows separating its location. This threshold value was derived based on the mean value of the total trunk height. PassThrough filter allows you to remove points that are inside or outside a user-defined range. According to this, all points that are below the average height of the trunk will be eliminated, which allows to eliminate the ground plane. In addition, an outlier filter (StatisticalOutlierRemoval filter) was used to remove noisy data sets using statistical analysis techniques.<br><br>
+
+Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (DBScan), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
+</div><br>
+
+## 4.	Features estimation
+<div style="text-align: justify ">
+The main objective of this work is to automatically measure the diameter at breast height (DBH), the total height, the height of the base of the cup, the volume of the crown and the percentage of crown loss.
+
+<img src="/pages/Projects/itree-mapper/dendrometric.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" /> 
+
+Each axis of the coordinate system associated with the 3D model represents a property of the tree: the X axis defines the width of the trunk, the Y axis the height, and the Z axis the depth. To achieve this coordinate association to a measurement characteristic, it was necessary to perform an alignment process between the global coordinate system and the trunk coordinate system; The idea is to find a unit normal vector that allows determining the angle of rotation between both axes and thus, apply a homogeneous transformation matrix that allows correcting the lag. SACModel_Plane is an algorithm for plane surface segmentation; It is available in the PCL library and allows finding the coefficients of the normal vector of the soil (flat surface of the 3D model) based on the points associated with the trunk. With a vector normal to the XY plane, where (x = 0, y = 0, z = 1), the cross product is made between the normal vector of the ground and the vector normal to the plane to obtain the rotation vector of the axes, which is unitary. Then the angle of rotation is calculated, which is the angle between the two planes, that is, the angle between the two normal vectors. 
+</div><br>
+
+<img src="/pages/Projects/itree-mapper/percentage-canopy.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" /> 
+
+### Results
+<div style="text-align: justify ">
+The system was evaluated using data collected from 5 trees with a single stem, as illustrated in Figure 38, in a rural area of ​​the city of Cali, Colombia. For tree 1 80 photographs were taken, for tree 2 66 photographs were taken; From tree 3, 74 photographs were taken and from trees 4 and 5, 65 and 94 photographs were taken respectively. In terms of precision, each characteristic of interest was evaluated with data measured in the field (ground truth). All the images were captured with a Motorola C6 cell phone, whose camera has a resolution of 3264x2448 pixels. The focal length and exposure parameters were set using an Android application called: OpenCamera, in such a way that they were not automatically modified by the camera. The average 3D reconstruction time was 50 minutes per tree, including the densification process. The chamber calibration parameters were obtained using a checkerboard pattern. For the data collection process, the standard techniques of forest censuses were used: the diameter at breast height (DBH) was taken at 1.33 m above the ground. A distance measuring laser was used to measure trunk height and total height (see section 4.1). All results in this document were generated on a 2-core HP Pavillion al005la running Ubuntu LTS 16.04.3. The libraries were used: PCL version 1.8.1.99, OpenCV version 3.4.1, TinyXML2, DBScan, CMVS-PMVS, OpenMVG and the entire system was programmed in the C ++ language. The results obtained in the experimental procedure are detailed below.
+</div><br>
+
+<img src="/pages/Projects/itree-mapper/dataset.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" /> 
+
+<img src="/pages/Projects/itree-mapper/results.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" /> 
+
+<img src="/pages/Projects/itree-mapper/last_res.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
