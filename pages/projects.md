@@ -1,14 +1,16 @@
 ---
 layout: page
-title: Projects
-subtitle: Here you will find some projects
+title: About me
+subtitle: Why you'd want to go on a date with me
 ---
+
+My name is Inigo Montoya. I have the following qualities:
+
+- I rock a great mustache
+- I'm extremely loyal to my family
+
+What else do you need?
 
 ### my history
 
-­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS
-­	Data analytics and Industrial Internet of Things project for a human-machine interaction 
-­	RFID project to read an animal tag using the RFIDRW-E-TTL with a nRF5 SDK 16.0
-­	CMake project for the nRF52 SDK to program an nRF52832 using JLink
-­	IoT application for getting the strain deformation data of a strain gauges sensor using an ESP32 micro-controller and ESP_IDF framework. 
-
+To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
