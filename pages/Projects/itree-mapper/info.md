@@ -10,10 +10,10 @@ This is an intelligent farming project about a real-scaled point cloud represent
 ---
 
 1.	[3D mapping](#3D-mapping)
-2.	[Scale factor estimation](#2.-Scale-factor-estimation)
-3.	[Segmentation](#Segmentation)
-4.	[Features estimation](#Features-estimation)
-5.  [Results](#Results)
+2.	[Scale factor estimation](#scale-factor-estimation)
+3.	[Segmentation](#segmentation)
+4.	[Features estimation](#features-estimation)
+5.  [Results](#results)
 
 <img src="/pages/Projects/itree-mapper/pipeline.png"
      alt="Markdown Monster icon"
