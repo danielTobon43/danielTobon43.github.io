@@ -7,20 +7,20 @@ cover-img: "/pages/Projects/itree-mapper/logo.png"
 <div style="text-align: justify ">
 This is an intelligent farming project about a real-scaled point cloud representation of an individual tree built from an RGB monocular camera using computer vision techniques such as structure from motion and point cloud processing. Official repository: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</a> 
 </div>
+---
 
-
-
-1.	[3D mapping](#1.-3D-mapping)
+1.	[3D mapping](#3D-mapping)
 2.	[Scale factor estimation](#2.-Scale-factor-estimation)
-3.	[Segmentation](#3.-Segmentation)
-4.	[Features estimation](#4.-Features-estimation)
-5.  [Results](#5.	Results)
+3.	[Segmentation](#Segmentation)
+4.	[Features estimation](#Features-estimation)
+5.  [Results](#Results)
 
 <img src="/pages/Projects/itree-mapper/pipeline.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
+<br>
 
-## 1. 3D mapping
+## 3D mapping
 <div style="text-align: justify ">
  This stage is responsible for generating the structural geometry of the tree in a digital 3D representation. OpenMVG (Open Multiple View Geometry) is an Open Source library of SFM-MVS which is quite optimized with multiprocessing algorithms. It has an integrated thread optimization system that allows the execution of multiple processes, making it a fairly robust and efficient program. <br><br>
 
@@ -30,8 +30,9 @@ This is an intelligent farming project about a real-scaled point cloud represent
 <img src="/pages/Projects/itree-mapper/mapping.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
+<br>
 
-## 2.	Scale factor estimation
+## Scale factor estimation
 <div style="text-align: justify ">
 The calculation of the scale factor is crucial for dendrometric estimation, since the objective of this project is to directly use the 3D model of a tree to calculate these characteristics. This factor is a quantity that allows you to transform the size of the 3D map to a real size. The procedure is similar to that proposed <a href="https://openmvg.readthedocs.io/en/latest/software/ui/SfM/control_points_registration/GCP/">here:</a> with the difference that the scale factor is obtained automatically and not using a graphical interface.<br><br>
 
@@ -58,8 +59,9 @@ To achieve 3D-2D projection in the image plane of interest, it is necessary to c
 <img src="/pages/Projects/itree-mapper/scale-result.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
+<br>
 
-## 3.	Segmentation
+## Segmentation
 <div style="text-align: justify ">
 In this stage, we seek to classify the 3D points associated with the trunk and crown of the tree in such a way that there are two representations of point clouds. PCL is an open source library for point cloud management and processing with a wide variety of tools and algorithms specialized in 3D point segmentation.<br><br>
 
@@ -70,7 +72,7 @@ Now, since the crown of the tree is at a certain height from the ground, it is p
 Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (DBScan), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
 </div><br>
 
-## 4.	Features estimation
+## Features estimation
 <div style="text-align: justify ">
 The main objective of this work is to automatically measure the diameter at breast height (DBH), the total height, the height of the base of the cup, the volume of the crown and the percentage of crown loss.
 </div>
@@ -85,9 +87,10 @@ Each axis of the coordinate system associated with the 3D model represents a pro
 
 <img src="/pages/Projects/itree-mapper/percentage-canopy.png"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" /><br>
+     style="float: left; margin-right: 10px;" />
+<br>
 
-## 5.	Results
+## Results
 <div style="text-align: justify ">
 The system was evaluated using data collected from 5 trees with a single stem, as illustrated in Figure 38, in a rural area of ​​the city of Cali, Colombia. For tree 1 80 photographs were taken, for tree 2 66 photographs were taken; From tree 3, 74 photographs were taken and from trees 4 and 5, 65 and 94 photographs were taken respectively. In terms of precision, each characteristic of interest was evaluated with data measured in the field (ground truth). All the images were captured with a Motorola C6 cell phone, whose camera has a resolution of 3264x2448 pixels. The focal length and exposure parameters were set using an Android application called: OpenCamera, in such a way that they were not automatically modified by the camera. The average 3D reconstruction time was 50 minutes per tree, including the densification process. The chamber calibration parameters were obtained using a checkerboard pattern. For the data collection process, the standard techniques of forest censuses were used: the diameter at breast height (DBH) was taken at 1.33 m above the ground. A distance measuring laser was used to measure trunk height and total height (see section 4.1). All results in this document were generated on a 2-core HP Pavillion al005la running Ubuntu LTS 16.04.3. The libraries were used: PCL version 1.8.1.99, OpenCV version 3.4.1, TinyXML2, DBScan, CMVS-PMVS, OpenMVG and the entire system was programmed in the C ++ language. The results obtained in the experimental procedure are detailed below.
 </div>
