@@ -9,7 +9,7 @@ author: Daniel Tobon
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "/_pages/aboutme"
+  About Me: "/_pages/aboutme.md"
   Projects:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
@@ -72,7 +72,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+#url-pretty: "MyWebsite.com"
 
 # Create a "tags" index page and make tags on each post clickable
 #link-tags: true
@@ -185,7 +185,7 @@ kramdown:
   input: GFM
 
 # Default YAML values (more information on Jekyll's site)
-defaults:
+# defaults:
   #-
   #  scope:
   #    path: ""
@@ -195,12 +195,12 @@ defaults:
   #    comments: true  # add comments to all blog posts
   #    social-share: true # add social media sharing buttons to all blog posts
   #    readtime: false # add estimated reading time on all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
+  # -
+    # scope:
+    #   path: "" # all files
+    # values:
+    #   layout: "page"
+    #   show-avatar: true
 
 # Exclude these files from production site
 exclude:
