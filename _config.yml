@@ -11,7 +11,7 @@ author: Daniel Tobon
 navbar-links:
 
   Home: "index"
-  About: "/pages/aboutme"
+  About: "/pages/about"
   Projects:
     # - Development of a robotic perception system for geometric feature estimation of an individual tree: "https://beautifuljekyll.com"
     # - ­	Interface framework for a ZR300 Intel Realsense camera in PCL and ROS: "https://beautifuljekyll.com"
@@ -25,7 +25,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/photo.JPG"
+avatar: "/assets/img/photo.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
