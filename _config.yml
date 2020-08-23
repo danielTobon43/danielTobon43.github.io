@@ -14,7 +14,7 @@ navbar-links:
   About Me: "/pages/aboutme"
   Projects:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - IMaR Technology Gateway:
+    IMaR Technology Gateway:
       - first project: "https://beautifuljekyll.com"
     # - Beautiful Jekyll: "https://beautifuljekyll.com"
     # - Learn markdown: "https://www.markdowntutorial.com/"
