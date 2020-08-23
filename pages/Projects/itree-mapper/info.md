@@ -6,13 +6,13 @@ cover-img: "/pages/Projects/itree-mapper/logo.png"
 ---
 <div style="text-align: justify ">
 This is an intelligent farming project about a real-scaled point cloud representation of an individual tree built from an RGB monocular camera using computer vision techniques such as structure from motion and point cloud processing. Official repository: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</a> 
-</div>
+</div><br/>
 
-1.	[3D mapping](#3D-Mapping)
-2.	[Scale factor estimation](#Scale-factor-estimation)
-3.	[Segmentation](#Segmentation)
-4.	[Features estimation](#Features-estimation)
-5.  [Results](#Results)
+1.	[3D mapping](#1.-3D-mapping)
+2.	[Scale factor estimation](#2.-Scale-factor-estimation)
+3.	[Segmentation](#3.-Segmentation)
+4.	[Features estimation](#4.-Features-estimation)
+5.  [Results](#5.-Results)
 
 <img src="/pages/Projects/itree-mapper/pipeline.png"
      alt="Markdown Monster icon"
