@@ -10,7 +10,8 @@ author: Daniel Tobon
 
 navbar-links:
 
-  About Me: "aboutme"
+  # About Me: "aboutme"
+  About Me: "/_pages/aboutme"
   Projects:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
