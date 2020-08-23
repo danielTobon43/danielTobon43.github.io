@@ -1,8 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: You shouldn't fear immigrants taking your job, you should fear robots
-SEAD FADILPASIC, "Robots are coming to take your jobs away", IT Pro Portal, February 17, 2016
+subtitle: You shouldn't fear immigrants taking your job, you should fear robots SEAD FADILPASIC, "Robots are coming to take your jobs away", IT Pro Portal, February 17, 2016
 ---
 
 My name is Daniel. I have the following qualities:
