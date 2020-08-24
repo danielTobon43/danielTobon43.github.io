@@ -93,10 +93,7 @@ The main objective of this work is to automatically measure the diameter at brea
 Each axis of the coordinate system associated with the 3D model represents a property of the tree: the X axis defines the width of the trunk, the Y axis the height, and the Z axis the depth. To achieve this coordinate association to a measurement characteristic, it was necessary to perform an alignment process between the global coordinate system and the trunk coordinate system; The idea is to find a unit normal vector that allows determining the angle of rotation between both axes and thus, apply a homogeneous transformation matrix that allows correcting the lag. SACModel_Plane is an algorithm for plane surface segmentation; It is available in the PCL library and allows finding the coefficients of the normal vector of the soil (flat surface of the 3D model) based on the points associated with the trunk. With a vector normal to the XY plane, where (x=0,y=0,z=1), the cross product is made between the normal vector of the ground and the vector normal to the plane to obtain the rotation vector of the axes, which is unitary. Then the angle of rotation is calculated, which is the angle between the two planes, that is, the angle between the two normal vectors. 
 </div>
 
-<img src="/pages/Projects/itree-mapper/percentage-canopy.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-
+<img src="/pages/Projects/itree-mapper/percentage-canopy.png" align="center">
 <hr> 
 
 ## Results
