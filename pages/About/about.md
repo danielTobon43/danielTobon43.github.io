@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: <p><cite>You shouldn't fear immigrants taking your job, you should fear robots</cite> by SEAD FADILPASIC, "Robots are coming to take your jobs away", IT Pro Portal, February 17, 2016</p>
 show-avatar: true
-css: "/css/aboutme.css"
+css: "/assets/css/aboutme.css"
 cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpg"]
 ---
 

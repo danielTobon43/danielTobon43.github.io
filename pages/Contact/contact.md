@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 subtitle: ""
-css: "/css/aboutme.css"
+css: "/assets/css/aboutme.css"
 ---
 
 <div id="contactme-section">
