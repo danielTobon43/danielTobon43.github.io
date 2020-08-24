@@ -22,8 +22,7 @@ Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap</a
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
----
----
+<hr> 
 
 ## 3D mapping
 <div style="text-align: justify ">
@@ -66,7 +65,7 @@ To achieve 3D-2D projection in the image plane of interest, it is necessary to c
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
 
----
+<hr> 
 
 ## Segmentation
 <div style="text-align: justify ">
@@ -79,7 +78,7 @@ Now, since the crown of the tree is at a certain height from the ground, it is p
 Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (<a href="https://www.kdnuggets.com/2020/04/dbscan-clustering-algorithm-machine-learning.html">DBscan</a>), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
 </div>
 
----
+<hr> 
 
 ## Features estimation
 <div style="text-align: justify ">
@@ -98,7 +97,7 @@ Each axis of the coordinate system associated with the 3D model represents a pro
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
----
+<hr> 
 
 ## Results
 <div style="text-align: justify ">
