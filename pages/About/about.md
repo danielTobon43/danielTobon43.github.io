@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: <p><cite>You shouldn't fear immigrants taking your job, you should fear robots</cite> by SEAD FADILPASIC, "Robots are coming to take your jobs away", IT Pro Portal, February 17, 2016</p>
+subtitle: <p><cite>The answer is navigation, manipulation, and implementation of more sophisticated intelligence</cite> by Colin Angle</p>
 show-avatar: true
 css: "/assets/css/aboutme.css"
-cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpg"]
+cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpeg","/pages/About/pic3.jpg","/pages/About/pic4.jpg"]
 ---
 
 <p class="about-text">

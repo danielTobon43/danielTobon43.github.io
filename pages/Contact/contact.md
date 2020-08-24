@@ -24,7 +24,7 @@ css: "/assets/css/aboutme.css"
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="_next" value="?message=Your message was sent successfully, thanks!" />
     
-  <div style="font-size: 12px; margin: -10px 0 10px;">Please do not use this form to send me full code samples or ask me to fix an app for free. Due to the volume of questions I receive I unfortuantely cannot offer free support.</div>
+  <div style="font-size: 12px; margin: -10px 0 10px;">!!</div>
   
   <button type="submit" class="btn btn-lg btn-primary">Submit</button>
 </form>

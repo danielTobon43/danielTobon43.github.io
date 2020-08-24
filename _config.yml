@@ -95,7 +95,8 @@ excerpt_length: 50
 
 # navbar-col: "#EAEAEA"
 navbar-col: "#111111"
-navbar-text-col: "#404040"
+# navbar-text-col: "#404040"
+navbar-text-col: "white"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
 text-col: "#404040"
