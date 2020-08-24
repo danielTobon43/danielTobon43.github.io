@@ -9,6 +9,7 @@ This is an intelligent farming project to estimate <a href="https://en.wikipedia
 
 Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap</a> 
 </div>
+
 ---
 
 1.	[3D mapping](#3d-mapping)
@@ -22,16 +23,19 @@ Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap</a
      style="float: left; margin-right: 10px;" />
 <br>
 
+---
+
 ## 3D mapping
 <div style="text-align: justify ">
  This stage is responsible for generating the structural geometry of the tree in a digital 3D representation. <a href="https://openmvg.readthedocs.io/en/latest/">OpenMVG</a> (Open Multiple View Geometry) is an Open Source library of SFM-MVS which is quite optimized with multiprocessing algorithms. It has an integrated thread optimization system that allows the execution of multiple processes, making it a fairly robust and efficient program. <br><br>
 
-<a href="https://www.di.ens.fr/cmvs/">CMVS/PMVS</a> is an Open Source library that allows densifying a 3D point cloud. Densify means increasing the number of 3D points, in order to have a more complete and better structured 3D model. Once the 3D mapping has been completed, OpenMVG generates a file <p style="font-style: italic;">sfm_data.bin</p> that contains all the relevant information of the project: the list of images used in the process, the internal parameters of the camera (<a href="http://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf">matrix K</a>), the projection matrices (rotation and translation) and the 2D observations of each 3D point. This file is converted into a PMVS project using an OpenMVG application called: <p style="font-style: italic;">openMVG_main_ConvertSfM_DataFormat</p>. PMVS uses images and projection matrices to increase the number of points in the model, reflecting a larger amount of data.
+<a href="https://www.di.ens.fr/cmvs/">CMVS/PMVS</a> is an Open Source library that allows densifying a 3D point cloud. Densify means increasing the number of 3D points, in order to have a more complete and better structured 3D model. Once the 3D mapping has been completed, OpenMVG generates a file <i>sfm_data.bin</i> that contains all the relevant information of the project: the list of images used in the process, the internal parameters of the camera (<a href="http://www.cs.cmu.edu/~16385/s17/Slides/11.1_Camera_matrix.pdf">matrix K</a>), the projection matrices (rotation and translation) and the 2D observations of each 3D point. This file is converted into a PMVS project using an OpenMVG application called: <p style="font-style: italic;">openMVG_main_ConvertSfM_DataFormat</p>. PMVS uses images and projection matrices to increase the number of points in the model, reflecting a larger amount of data.
 </div>
 
 <img src="/pages/Projects/itree-mapper/mapping.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
+
 ---
 
 ## Scale factor estimation
@@ -61,6 +65,7 @@ To achieve 3D-2D projection in the image plane of interest, it is necessary to c
 <img src="/pages/Projects/itree-mapper/scale-result.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
+
 ---
 
 ## Segmentation
@@ -73,6 +78,7 @@ Now, since the crown of the tree is at a certain height from the ground, it is p
 
 Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (<a href="https://www.kdnuggets.com/2020/04/dbscan-clustering-algorithm-machine-learning.html">DBscan</a>), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
 </div>
+
 ---
 
 ## Features estimation
@@ -91,6 +97,7 @@ Each axis of the coordinate system associated with the 3D model represents a pro
 <img src="/pages/Projects/itree-mapper/percentage-canopy.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
+
 ---
 
 ## Results
