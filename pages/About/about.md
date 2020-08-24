@@ -1,10 +1,10 @@
 ---
 layout: page
 title: About me
-subtitle: <p><cite>The answer is navigation, manipulation, and implementation of more sophisticated intelligence</cite> by Colin Angle</p>
+subtitle: <p><cite>The answer is navigation, manipulation, and implementation of more sophisticated intelligence</cite></p>
 show-avatar: true
 css: "/assets/css/aboutme.css"
-cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpeg","/pages/About/pic3.jpg","/pages/About/pic4.jpg"]
+cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpeg","/pages/About/pic3.jpg"]
 ---
 
 <p class="about-text">
@@ -21,7 +21,7 @@ Obtained my BSc in <strong>Mechatronics Engineering</strong> from the University
 
 <p class="about-text">
 <span class="fa fa-heart about-icon"></span>
-I enjoy american tv series such as The Bing Bang Theory, Friends, and Smallville
+I enjoy american tv series such as The Bing Bang Theory, Friends, TWD, GoT, The simpsons and Smallville
 </p>
 
 <p class="about-text">
@@ -31,5 +31,5 @@ The <strong><a href="/projects">projects</a></strong> page is a nice place to se
 
 <p class="about-text">
 <span class="fa fa-globe about-icon"></span>
-Grew up in <i>Santiago de Cali, Colombia</i>; moved to <i>Tralee, Ireland</i> after finishing my undergraduate.
+Grew up in <i>Santiago de Cali, Colombia in 1994</i>; moved to <i>Tralee, Ireland</i> in 2019 after finishing my undergraduate.
 </p>
