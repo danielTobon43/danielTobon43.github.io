@@ -33,15 +33,3 @@ The <strong><a href="/projects">projects</a></strong> page is a nice place to se
 <span class="fa fa-globe about-icon"></span>
 Grew up in <i>Santiago de Cali, Colombia</i>; moved to <i>Tralee, Ireland</i> after finishing my undergraduate.
 </p>
-
-<img src="/pages/About/pic1.jpg"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-
-<img src="/pages/About/pic2.jpg"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
-
-<img src="/pages/About/ccra.png"
-     alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
