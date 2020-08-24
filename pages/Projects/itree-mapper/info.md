@@ -7,7 +7,7 @@ cover-img: "/pages/Projects/itree-mapper/logo.png"
 <div style="text-align: justify ">
 This is an intelligent farming project to estimate <a href="https://en.wikipedia.org/wiki/Dendrometry">dendometric</a> features of a tree from a real-scale pointcloud representation built from an RGB monocular camera using computer vision techniques such as structure from motion, segmentation, clustering and pointcloud processing. <br><br>
 
-Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</a> 
+Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap</a> 
 </div>
 ---
 
@@ -32,7 +32,7 @@ Source code: <a href="https://github.com/danielTobon43/iTree3DMap">iTree3DMap:</
 <img src="/pages/Projects/itree-mapper/mapping.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
-<br>
+---
 
 ## Scale factor estimation
 <div style="text-align: justify ">
@@ -61,7 +61,7 @@ To achieve 3D-2D projection in the image plane of interest, it is necessary to c
 <img src="/pages/Projects/itree-mapper/scale-result.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" /> 
-<br>
+---
 
 ## Segmentation
 <div style="text-align: justify ">
@@ -72,7 +72,8 @@ The segmentation procedure consists of two steps: the segmentation of the trunk 
 Now, since the crown of the tree is at a certain height from the ground, it is possible to define a break value that allows separating its location. This threshold value was derived based on the mean value of the total trunk height. PassThrough filter allows you to remove points that are inside or outside a user-defined range. According to this, all points that are below the average height of the trunk will be eliminated, which allows to eliminate the ground plane. In addition, an outlier filter (<a href="https://pointclouds.org/documentation/tutorials/statistical_outlier.html">StatisticalOutlierRemoval filter</a>) was used to remove noisy data sets using statistical analysis techniques.<br><br>
 
 Even after removing the soil, the model is still noisy, for this reason, the crown of the tree is completely extracted using Density based spatial clustering of applications with noise (<a href="https://www.kdnuggets.com/2020/04/dbscan-clustering-algorithm-machine-learning.html">DBscan</a>), a segmentation algorithm based on Euclidean distances. It was proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996 and what it does is a density-based grouping: given a set of points in some space, it groups the points that are closely grouped (points with many neighbors nearby), marking as atypical points, those that are found alone in low-density regions.
-</div><br>
+</div>
+---
 
 ## Features estimation
 <div style="text-align: justify ">
@@ -90,7 +91,7 @@ Each axis of the coordinate system associated with the 3D model represents a pro
 <img src="/pages/Projects/itree-mapper/percentage-canopy.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
-<br>
+---
 
 ## Results
 <div style="text-align: justify ">
