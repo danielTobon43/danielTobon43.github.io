@@ -43,7 +43,7 @@ The proposed method uses a circular pattern that relates the length of a 3D mode
 
 <div style="text-align: justify ">
 The scale pattern was used during the image capture process relating the 3D model to each photograph. Therefore, a pixel reference can be found that allows a known distance from the real world to be related to the 3D model. SFM relates each 3D point to its corresponding 2D point in each image. Based on that, it is possible to relate the coordinates of a pixel (u,v,1) of an image with its corresponding 3D coordinate (X,Y,Z,1) in the real world.
-</div><br>
+</div>
 
 <img src="/pages/Projects/itree-mapper/scale.png" align="center">
 
