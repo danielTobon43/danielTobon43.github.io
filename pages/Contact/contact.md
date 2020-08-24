@@ -7,7 +7,7 @@ css: "/css/aboutme.css"
 
 <div id="contactme-section">
 
-<p>You can <a href="mailto:daniel.tobon@uao.edu.co?subject=Hello from danieltc.portfolio.com">email me</a> or find me <a href="https://www.linkedin.com/in/danieltobonco43/">on LinkedIn</a> if you want to get in touch. 
+<p>You can <a href="mailto:daniel.tobon@uao.edu.co?subject=Hello from danieltc.portfolio.com">email me</a> or find me <a href="https://www.linkedin.com/in/danieltobonco43/">on LinkedIn</a> if you want to get in touch.</p> 
 
 <form action="https://formspree.io/mnqgydro" method="POST" class="form" id="contact-form">
   <p>You can also send me a quick message using the form below:</p>
