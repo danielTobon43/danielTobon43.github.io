@@ -49,11 +49,12 @@ The bits ADPS0, ADPS1 and ADPS2 correspond to the prescaler of the ADC, that is,
 <div style="text-align: justify ">
 The micro has a 16 MHz quartz crystal, that is, the frequency or speed with which it executes the instructions is 16 million per second. The ADC needs a suitable working frequency or speed for two reasons; a high frequency for the ADC implies that the data conversion is very fast, but the digital value may not be very reliable. Now, a low frequency implies that the digital value is reliable, but the data conversion time is delayed. The manufacturer's datasheet indicates the ADC's range between 50 and 200 KHz, this means that putting the ADC to work at an intermediate frequency between that range is optimal, since the data is reliable and the conversion is not slow. It is at this point where the importance of the prescaler comes in, since it is the factor that determines the working speed of the ADC. The frequency or working speed of the ADC is defined as:<br><br>
 
-<img src="https://render.githubusercontent.com/render/math?math=f_ADC =f_CPU/prescaler">
-f_ADC=f_CPU/prescaler  (1)
-Dónde:
-f_ADC -->	Frecuencia del ADC
-f_CPU-->	Frecuencia del microprocesador
+<img src="https://render.githubusercontent.com/render/math?math=f_A_D_C =(f_C_P_U/prescaler)"><br><br>
+<img src="https://latex.codecogs.com/gif.latex?f_A_D_C =(f_C_P_U/prescaler) " /><br><br>
+
+where:
+<img src="https://render.githubusercontent.com/render/math?math=f_A_D_C"> -->	freq ADC<br>
+<img src="https://render.githubusercontent.com/render/math?math=f_C_P_U"> --> 	Freq micro<br><br>
 
 For this case, the frequency of the microprocessor is 16 MHz. The working frequency of the ADC should be approximately half the range, that is, 125 KHz. Replacing these values ​​in equation (1) and clearing the prescaler would give:<br><br>
 
