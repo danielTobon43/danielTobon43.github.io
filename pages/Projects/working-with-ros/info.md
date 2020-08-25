@@ -8,6 +8,9 @@ cover-img:
 
 <b>Documentation:</b>
 <div style="text-align: center; margin-top: 90px;">
-  <iframe src="/pages/Projects/working-with-ros/doc/paper.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
+  <iframe src="/pages/Projects/working-with-ros/doc/paper1.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
+</div>
+<div style="text-align: center; margin-top: 90px;">
+  <iframe src="/pages/Projects/working-with-ros/doc/paper2.pdf" scrolling="no" width="850px" height="2200px" frameBorder="0"></iframe>
 </div>
 
