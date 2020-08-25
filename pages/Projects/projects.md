@@ -9,9 +9,9 @@ In this section you will find the documentation related to each project that I h
 
 ## Computer vision
 - **[<b>itree-mapper</b>](./itree-mapper/info.md)**: Development of a robotic perception system to estimate dendometric features of an individual tree
-- **[<b>dbscan-octrees</b>](./dbscan-pcl/info.md)**: Dbscan implementation in PCL
-- **[<b>zr300-wrapper</b>](./zr300-interface/info.md)**: Interface framework for a ZR300 Intel Realsense camera in PCL and ROS
-- **[<b>sfM-danPipeline</b>](./sfm-dan/info.md)**: A simple structure from motion pipeline for 3D incremental reconstruction
+- **[<b>dbscan-octrees</b>](https://github.com/danielTobon43/DBScan-PCL-Optimized)**: Dbscan implementation in PCL
+- **[<b>zr300-wrapper</b>](https://github.com/danielTobon43/zr300_pcl_visualizer)**: Interface framework for a ZR300 Intel Realsense camera in PCL and ROS
+- **[<b>sfM-danPipeline</b>](https://github.com/danielTobon43/sfM_danPipeline)**: A simple structure from motion pipeline for 3D incremental reconstruction
 
 ## Pointcloud processing
 - **[<b>upsampling-pointcloud</b>](https://github.com/danielTobon43/upsamplingCloudPCL): Upsampling method for an input cloud using mls method of PCL 1.9.1
@@ -28,15 +28,15 @@ In this section you will find the documentation related to each project that I h
 ## Embedded systems
 - **[<b>embedded-control</b>](./chocolate-project/info.md)**: Embedded control for a chocolate injection line using Arduino
 - **[<b>embedded-low-filter</b>](./low-filter/info.md)**: Low filter with atmega 2560 microcontroller
-- **[<b>RFID-wrapper</b>](./rfid-animal-tag/info.md)**: RFID project to read an animal tag using the RFIDRW-E-TTL with a nRF5 SDK 16.0
+- **[<b>RFID-wrapper</b>](https://github.com/danielTobon43/RFID-library-nrf52832)**: RFID project to read an animal tag using the RFIDRW-E-TTL with a nRF5 SDK 16.0
 - **[<b>nRF5-wrapper</b>](https://github.com/danielTobon43/nRF5-cmake-framework)**: CMake project for the nRF52 SDK to program an nRF52832 using JLink
-- **[<b>sht1x-wrapper</b>](./sht1x-interface/info.md)**: This is a C library for the SHT1X Temperature-Humidity sensor for esp-idf framework
-- **[<b>hx711-wrapper</b>](./hx711-interface/info.md)**: IoT application for getting the strain deformation data of a strain gauges sensor using an ESP32 micro-controller and the ESP_IDF framework
-- [<b>esp32-client-server</b>](./esp32-client/info.md): This is a C program for the sta and ap module of the esp32 using ESP_IDF framework
+- **[<b>sht1x-wrapper</b>](https://github.com/danielTobon43/sht1x_esp32_idf_library)**: This is a C library for the SHT1X Temperature-Humidity sensor for esp-idf framework
+- **[<b>hx711-wrapper</b>](https://github.com/danielTobon43/hx711-esp-idf-library)**: IoT application for getting the strain deformation data of a strain gauges sensor using an ESP32 micro-controller and the ESP_IDF framework
+- [<b>esp32-client-server</b>](https://github.com/danielTobon43/esp32-client-server-library): This is a C program for the sta and ap module of the esp32 using ESP_IDF framework
 
 ## Image processing
-- **[<b>canopy-missing</b>](./canopy-missing/info.md)**: C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
-- **[<b>stitching</b>](./stitching/info.md)**: C++ application to create a panorama from multiple images in OpenCV.
+- **[<b>canopy-missing</b>](https://github.com/danielTobon43/canopyMissing)**: C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
+- **[<b>stitching</b>](https://github.com/danielTobon43/stiching-opencv)**: C++ application to create a panorama from multiple images in OpenCV.
 - **[<b>gui-control-points</b>](https://github.com/danielTobon43/gui-Control-points)**: Gui to select image pixel reference for iTree3DMap. This program uses the control point registration GUI of OpenMVG as base.
 - **[<b>image-to-video-opencv</b>](https://github.com/danielTobon43/image2video-opencv)**: This is a c++ program to convert an images sequence to video using opencv
 - **[<b>video-to-image-opencv</b>](https://github.com/danielTobon43/video2image-opencv)**: This is a c++ program to convert a video to image sequence using opencv
@@ -48,6 +48,6 @@ In this section you will find the documentation related to each project that I h
 
 ## Data science and IoT
 - **<b>plotly-dash-project</b>**: Data science and Industrial Internet of Things project for a human-machine interface 
-- **[<b>update-trace</b>](./update-trace/info.md)**: Python program to update multiple traces in a plotly python graph.
+- **[<b>update-trace</b>](https://github.com/danielTobon43/update-trace-dash-plotly)**: Python program to update multiple traces in a plotly python graph.
 
 
