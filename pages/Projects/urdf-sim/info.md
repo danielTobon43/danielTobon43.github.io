@@ -6,13 +6,13 @@ cover-img:
 ---
 <img src="/pages/Projects/urdf-sim/banner.png" align="center"><br>
 
+<div style="text-align: justify ">
 Shenzhen Yueliang Technology [1] is a company dedicated to development robot arm solution in China. Dobot is the first generation of robot arm debuted in 2015 in the worldwide. <br><br>
 
-Dobot Magician (see figure 1) integrates 3D printing, laser engraving, painting and writing. Dobot Magician in Rviz
-The Dobot Magician manual contains the technical specifications, as the material and the turning speed of each joint. Table 1 shows the most important technical specifications, including the selection of the pen for drawing and writing as final effector.
-The objective of modeling the robot in urdf format is to be able to visualize the robot in Rviz.<br><br>
+The Dobot Magician manual contains the technical specifications, as the material and the turning speed of each joint. Table 1 shows the most important technical specifications, including the selection of the pen for drawing and writing as final effector. The objective of modeling the robot in urdf format is to be able to visualize the robot in Rviz.<br><br>
 
-The Dobot Magician manipulator has 6 degrees of freedom; That is, in 3D modeling of the robot it is necessary to generate 6 links with their respective dimensions in the archive urdf that describes the robot. The first step is to create the robot package in the catkin_ws folder. To do this, in the terminal of ubuntu catkin_create_pkg "package name" is used to create the package associated with the Dobot Magician Robot. Once the package is created, it must be built in the workspace catkin_ws; the catkin_make command allows you to build the Dobot Magician Robot package in catkin_ws. The figure 5 shows the package dobot_magician_pkg with the urdf, meshes and launch folders. <br><br>
+The Dobot Magician manipulator has 6 degrees of freedom; That is, in 3D modeling of the robot it is necessary to generate 6 links with their respective dimensions in the archive urdf that describes the robot. The first step is to create the robot package in the catkin_ws folder. To do this, in the terminal of ubuntu catkin_create_pkg "package name" is used to create the package associated with the Dobot Magician Robot. Once the package is created, it must be built in the workspace catkin_ws; the catkin_make command allows you to build the Dobot Magician Robot package in catkin_ws. The figure 5 shows the package dobot_magician_pkg with the urdf, meshes and launch folders. <br>
+</div>
 
 <b> example code</b>
 ```xml
