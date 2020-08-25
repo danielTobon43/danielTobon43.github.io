@@ -14,7 +14,7 @@ In this section you will find the documentation related to each project that I h
 - **[<b>sfM-danPipeline</b>](https://github.com/danielTobon43/sfM_danPipeline)**: A simple structure from motion pipeline for 3D incremental reconstruction
 
 ## Pointcloud processing
-- **[<b>upsampling-pointcloud</b>](https://github.com/danielTobon43/upsamplingCloudPCL): Upsampling method for an input cloud using mls method of PCL 1.9.1
+- **[<b>upsampling-pointcloud</b>](https://github.com/danielTobon43/upsamplingCloudPCL)**: Upsampling method for an input cloud using mls method of PCL 1.9.1
 - **[<b>pointcloud-to-TXT</b>](https://github.com/danielTobon43/pointcloudToTXT)**: This program convert a point cloud into .txt file
 - **[<b>pcl-visualizer</b>](https://github.com/danielTobon43/pcl_visualizer)**: This program display a PCL viewer for input point cloud data
 - **[<b>pointcloud-to-mesh</b>](https://github.com/danielTobon43/pointcloudToMesh)**: C++ application to convert pcd file, ply file, txt file or xyz point cloud to MESH representation (Gp3).
