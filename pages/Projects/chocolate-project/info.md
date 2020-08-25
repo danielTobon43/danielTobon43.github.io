@@ -12,7 +12,6 @@ cupcake was located in an initial stage and then, it moves through a conveyor be
 for each phase: chocolate injection, cooling and deposit. The micro-controller was
 programmed using c++.<br><br>
 
-[Source code](https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/source_code?raw=true)
 Source code: <a href="https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/source_code.zip?raw=true">here</a><br>
 CAD model: <a href="https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/cad_model.zip?raw=true">here</a><br><br>
 
