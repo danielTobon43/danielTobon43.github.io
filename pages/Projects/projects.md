@@ -19,7 +19,7 @@ In this section you will find the documentation related to each project that I h
 - [<b>canopy-missing</b>](./canopy-missing/info.md): C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
 - [<b>sfM-danPipeline</b>](./sfm-dan/info.md): A simple structure from motion pipeline for 3D incremental reconstruction
 - <b>urdf-gazebo-sim</b>: URDF model and Gazebo simulation of a 7DOF robot using ROS. In this project, I performed the trajectory planning of a robot arm in Gazebo using the URDF, XACRO model, and the Moveit package. I created a ROS package for the project and the CAD model on SolidWorks. 
-- <b>robot-arm</b>: Robotic arm design with 5 degrees of freedom. Robotic arm design for an assembly line using stress theory and deformation due to mechanical failure. I achieved a CAD model on SolidWorks with its corresponding finite element analysis. I designed the robot arm to support a 2 kg load.
+- [<b>robot-arm</b>](./robot-arm-design/info.md): Robotic arm design with 5 degrees of freedom. Robotic arm design for an assembly line using stress theory and deformation due to mechanical failure. I achieved a CAD model on SolidWorks with its corresponding finite element analysis. I designed the robot arm to support a 2 kg load.
 - [<b>esp32-client-server</b>](./esp32-client/info.md): This is a C program for the sta and ap module of the esp32 using ESP_IDF framework
 - [<b>upsampling-pointcloud</b>](./upsampling-cloud/info.md): Upsampling method for an input cloud using mls method of PCL 1.9.1
 - [<b>pointcloud-to-mesh</b>](./pointcloud-mesh/info.md): C++ application to convert pcd file, ply file, txt file or xyz point cloud to MESH representation (Gp3).
@@ -28,3 +28,4 @@ In this section you will find the documentation related to each project that I h
 - [<b>update-trace</b>](./update-trace/info.md): Python program to update multiple traces in a plotly python graph.
 - [<b>embedded-control</b>](./chocolate-project/info.md): Embedded control for a chocolate injection line using Arduino
 - [<b>embedded-low-filter</b>](./low-filter/info.md): Low filter with atmega 2560 microcontroller
+
