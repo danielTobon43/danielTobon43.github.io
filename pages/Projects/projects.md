@@ -26,3 +26,4 @@ In this section you will find the documentation related to each project that I h
 - [<b>align-pointcloud</b>](./align-cloud/info.md): C++ application to align a pointcloud to the global reference frame in PCL.
 - [<b>stitching</b>](./stitching/info.md): C++ application to create a panorama from multiple images in OpenCV.
 - [<b>update-trace</b>](./update-trace/info.md): Python program to update multiple traces in a plotly python graph.
+- [<b>chocolat-project</b>](./chocolate-project/info.md): Embedded control for a chocolate injection line using Arduino
