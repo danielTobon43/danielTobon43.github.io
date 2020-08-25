@@ -49,15 +49,15 @@ The bits ADPS0, ADPS1 and ADPS2 correspond to the prescaler of the ADC, that is,
 <div style="text-align: justify ">
 The micro has a 16 MHz quartz crystal, that is, the frequency or speed with which it executes the instructions is 16 million per second. The ADC needs a suitable working frequency or speed for two reasons; a high frequency for the ADC implies that the data conversion is very fast, but the digital value may not be very reliable. Now, a low frequency implies that the digital value is reliable, but the data conversion time is delayed. The manufacturer's datasheet indicates the ADC's range between 50 and 200 KHz, this means that putting the ADC to work at an intermediate frequency between that range is optimal, since the data is reliable and the conversion is not slow. It is at this point where the importance of the prescaler comes in, since it is the factor that determines the working speed of the ADC. The frequency or working speed of the ADC is defined as:<br><br>
 
-<img src="https://render.githubusercontent.com/render/math?math=f_ADC =(f_C_P_U/prescaler)"><br><br>
+<img src="https://render.githubusercontent.com/render/math?math=f_ADC =(f_{CPU}/prescaler)"><br><br>
 
 where:<br>
-<img src="https://render.githubusercontent.com/render/math?math=f_ADC"> -->	freq ADC<br>
-<img src="https://render.githubusercontent.com/render/math?math=f_CPU"> --> 	Freq micro<br><br>
+<img src="https://render.githubusercontent.com/render/math?math=f_{ADC}"> -->	freq ADC<br>
+<img src="https://render.githubusercontent.com/render/math?math=f_{CPU}"> --> 	Freq micro<br><br>
 
 For this case, the frequency of the microprocessor is 16 MHz. The working frequency of the ADC should be approximately half the range, that is, 125 KHz. Replacing these values ​​in equation (1) and clearing the prescaler would give:<br><br>
 
-<img src="https://render.githubusercontent.com/render/math?math=prescaler =(f_CPU/f_ADC)=(16 MHz)/(125 KHz)=128"><br><br>
+<img src="https://render.githubusercontent.com/render/math?math=prescaler =(f_{CPU}/f_{ADC})=(16 MHz)/(125 KHz)=128"><br><br>
 
 This indicates that, from the previous table, using a 16 MHz crystal and selecting a 128 prescaler will guarantee that the conversion speed of the ADC will be 125 KHz, an intermediate value of the speed range, which, it is optimal. Taking this into account, the three least significant bits of the ADCSRA register are loaded with 1 to select the prescaler of 128.<br><br>
 
