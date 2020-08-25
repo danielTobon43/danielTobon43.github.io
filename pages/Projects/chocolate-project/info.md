@@ -12,7 +12,8 @@ cupcake was located in an initial stage and then, it moves through a conveyor be
 for each phase: chocolate injection, cooling and deposit. The micro-controller was
 programmed using c++.<br><br>
 
-Source code: [here](https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/source_code?raw=true)
+Source code: [here](https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/source_code.zip?raw=true)
+CAD model: [here](https://github.com/danielTobon43/danielTobon43.github.io/blob/master/pages/Projects/chocolate-project/cad_model.zip?raw=true)
 
 This project introduces the topic of how to integrate MICROPROCESSORS FROM AN INDUSTRIAL PROCESS APPLICATION IN THE PREPARATION OF A CHOCOLATE MIXTURE. Starting from the theory of microprocessors, the design process begins with the selection of the appropriate inputs for the elaboration of the chocolate-flavored mixture; Then, the stages that make up the process are defined, being the supply of the paper cup to the production line where the mass of the mixed content is poured, the start-up of the oven, which must heat the mixture to a temperature and adequate time and finally, the process of cooling the chocolate for its subsequent packaging and distribution.
 </div>
