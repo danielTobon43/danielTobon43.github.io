@@ -5,6 +5,7 @@ subtitle: <p><cite>The answer is navigation, manipulation, and implementation of
 show-avatar: true
 css: "/assets/css/aboutme.css"
 cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.jpeg","/pages/About/pic3.jpg"]
+social-share: true
 ---
 
 <p class="about-text">
