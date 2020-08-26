@@ -24,6 +24,18 @@
   </li>
 {%- endif -%}
 
+{%- if site.social-network-links.researchgate -%}
+  <li class="list-inline-item">
+    <a href="https://www.researchgate.net/profile/{{ site.social-network-links.researchgate }}" title="ResearchGate">
+      <span class="fa-stack fa-lg" aria-hidden="true">
+        <i class="fas fa-circle fa-stack-2x"></i>
+        <i class="fab fa-researchgate fa-stack-1x fa-inverse"></i>
+      </span>
+      <span class="sr-only">ResearchGate</span>
+   </a>
+  </li>
+{%- endif -%}
+
 {%- if site.social-network-links.calendly -%}
   <li class="list-inline-item">
     <a href="https://calendly.com/{{ site.social-network-links.calendly }}" title="Schedule a meeting with me">

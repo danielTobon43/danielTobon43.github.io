@@ -26,6 +26,14 @@
     </a>
   {% endif %}
 
+  {% if site.share-links-active.researchgate %}
+    <a href="https://www.researchgate.net/sharer.php?u={{ page.url | absolute_url | url_encode }}"
+      class="btn btn-social-icon btn-researchgate" title="Share on ResearchGate">
+      <span class="fab fa-fw fa-researchgate" aria-hidden="true"></span>
+      <span class="sr-only">ResearchGate</span>
+    </a>
+  {% endif %}
+
   {% if site.share-links-active.linkedin %}
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
       class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
