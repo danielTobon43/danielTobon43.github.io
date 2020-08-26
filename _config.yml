@@ -43,6 +43,7 @@ social-network-links:
   email: "daniel.tobon@uao.edu.co"
   #facebook: deanattali
   github: danielTobon43
+  researchgate: Daniel_Tobon2
   #twitter: daattali
 #  reddit: yourname
   linkedin: danieltobonco43
@@ -72,6 +73,7 @@ social-network-links:
 share-links-active:
   #twitter: true
   #facebook: true
+  researchgate: true
   github: true
   linkedin: true
   vk: false
