@@ -19,6 +19,7 @@ navbar-links:
     # - Learn markdown: "https://www.markdowntutorial.com/"
   #Author's home: "https://deanattali.com"
   Datasets: "/pages/Datasets/datasets"
+  References: "/pages/References/references"
   Contact: "/pages/Contact/contact"
 
 # --- Logo --- #

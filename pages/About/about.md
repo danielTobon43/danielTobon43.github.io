@@ -12,7 +12,7 @@ social-share: true
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently a researcher in electronics, embedded systems, and hardware design at <a href="https://www.technologygateway.ie/network/imar-gateway/" target="_blank">IMaR Technology Gateway</a> supervised by <a href="http://imar.ie/zee_team/krishna-panduru/" target="_blank">Krishna Panduru</a>). My role involves IoT and embedded systems for industry applications. 
+Currently a researcher in electronics, embedded systems, and hardware design at <a href="https://www.technologygateway.ie/network/imar-gateway/" target="_blank">IMaR Technology Gateway</a> supervised by <a href="http://imar.ie/zee_team/krishna-panduru/" target="_blank">Krishna Panduru</a>. My role involves IoT and embedded systems for industry applications. 
 </p>
 
 <p class="about-text">
