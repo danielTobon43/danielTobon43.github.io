@@ -12,14 +12,14 @@ social-share: true
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-Currently a researcher in electronics, embedded systems, and hardware design at <a href="https://www.technologygateway.ie/network/imar-gateway/" target="_blank">IMaR Technology Gateway</a>. My role involves IoT and embedded systems for industry applications. 
+Currently a researcher in electronics, embedded systems, and hardware design at <a href="https://www.technologygateway.ie/network/imar-gateway/" target="_blank">IMaR Technology Gateway</a> supervised by <a href="http://imar.ie/zee_team/krishna-panduru/" target="_blank">Krishna Panduru</a>). My role involves IoT and embedded systems for industry applications. 
 </p>
 
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
 Obtained my BSc in <strong>Mechatronics Engineering</strong> from the University of Autonoma de Occidente (supervised by the amazing
 <a href="https://scholar.google.com/citations?user=x3M1JlAAAAAJ&hl=en" target="_blank">Victor Romero</a>). My thesis project involved
-<a href="https://danieltobon43.github.io/pages/Projects/itree-mapper/info/" target="_blank">developing robotics perception system to estimate dendometric features in a tree</a>.
+<a href="https://danieltobon43.github.io/pages/Projects/itree-mapper/info/" target="_blank">developing robotics perception system to estimate dendometric features in a tree</a>. 
 </p>
 
 <p class="about-text">
