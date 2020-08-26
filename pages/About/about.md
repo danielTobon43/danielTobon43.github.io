@@ -27,7 +27,7 @@ I enjoy american tv series such as The Bing Bang Theory, Friends, TWD, GoT, The 
 </p>
 
 <p class="about-text">
-<span class="iconify" data-icon="fa-file-text-o" data-inline="false"></span>
+<span class="fa fa-file-text-o about-icon"></span>
 The <strong><a href="/projects">projects</a></strong> page is a nice place to see some of my work, but you can also view my <a href="/pages/Resume/Resume">resume</a>. 
 </p>
 
