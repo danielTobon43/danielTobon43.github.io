@@ -8,6 +8,7 @@ cover-img: ["/pages/About/ccra.png", "/pages/About/pic1.jpg","/pages/About/pic2.
 social-share: true
 ---
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
