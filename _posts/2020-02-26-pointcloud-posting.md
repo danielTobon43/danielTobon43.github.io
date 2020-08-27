@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: Pointcloud processing on a tree
 subtitle: Dendrometric features estimation
-cover-img: /assets/img/banner2.jpg
-thumbnail-img: /assets/img/log.png
-share-img: /assets/img/path.jpg
+cover-img: /assets/img/banner2.png
+thumbnail-img: /assets/img/log.jpg
+share-img: /assets/img/banner2.png
 tags: [sfm, dbscan]
 ---
 
