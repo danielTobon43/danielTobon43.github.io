@@ -17,7 +17,7 @@ Universidad Autonoma de Occidente Cali, Colombia<br>
 Contact number: +57 2 3188000 ext. 11847<br>
 E-mail: varomero@uao.edu.co
 
-3. <a href="http://scienti.colciencias.gov.co:8081/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000637769" target="_blank">Juan Carlos Perafan Villota</a><br>
+3. <a href="https://www.linkedin.com/in/juanperafan/" target="_blank">Juan Carlos Perafan Villota</a><br>
 PhD in Electrical Engineering<br>
 Universidad Autonoma de Occidente Cali, Colombia<br>
 Contact number: +57 2 3188000 ext. 11312<br>
