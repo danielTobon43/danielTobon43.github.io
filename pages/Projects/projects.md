@@ -7,6 +7,8 @@ subtitle:
 In this section you will find the documentation related to each project that I have worked. 
 </div>
 
+- **[<b>test</b>](./itree-mapper/info2.md)**: Developmen
+
 ## Computer vision
 - **[<b>itree-mapper</b>](./itree-mapper/info.md)**: Development of a robotic perception system to estimate dendometric features of an individual tree
 - **[<b>dbscan-octrees</b>](https://github.com/danielTobon43/DBScan-PCL-Optimized)**: Dbscan implementation in PCL
