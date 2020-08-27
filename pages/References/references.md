@@ -23,7 +23,6 @@ Universidad Autonoma de Occidente Cali, Colombia<br>
 Contact number: +57 2 3188000 ext. 11312<br>
 E-mail: jcperafan@uao.edu.co
 
-
 4. <a href="https://www.linkedin.com/in/walter-mayor/" target="_blank">Victor Adolfo Romero Cano</a><br>
 Master in Computer Science<br>
 Universidad Autonoma de Occidente Cali, Colombia<br>
