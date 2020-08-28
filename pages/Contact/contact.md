@@ -16,7 +16,7 @@ css: "/assets/css/aboutme.css"
       <input type="email" name="_replyto" required="required" class="form-control input-lg" placeholder="Email" title="Email" style="margin: 0px 0px 0px 17px;">
     </div>
     <div class="col-xs-6">
-      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name" style="margin: 0px 0px 0px 5px;>
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name" style="margin: 0px 0px 0px 5px;">
     </div>
   </div>
   <input type="hidden" name="_subject" value="New submission from danieltc.portfolio.com">
