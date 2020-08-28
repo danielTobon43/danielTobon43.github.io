@@ -13,10 +13,10 @@ css: "/assets/css/aboutme.css"
   <p>You can also send me a quick message using the form below:</p>
   <div class="row">
     <div class="col-xs-6">
-      <input type="email" name="_replyto" required="required" class="form-control input-lg" placeholder="Email" title="Email" style="margin: 0px 0px 0px 20px;">
+      <input type="email" name="_replyto" required="required" class="form-control input-lg" placeholder="Email" title="Email" style="margin: 0px 0px 0px 17px;">
     </div>
     <div class="col-xs-6">
-      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name">
+      <input type="text" name="name" class="form-control input-lg" placeholder="Name" title="Name" style="margin: 0px 0px 0px 5px;>
     </div>
   </div>
   <input type="hidden" name="_subject" value="New submission from danieltc.portfolio.com">
