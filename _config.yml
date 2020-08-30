@@ -33,7 +33,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: /assets/img/title-im.png
 
 
 # --- Footer social media links --- #
@@ -42,27 +42,27 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "daniel.tobon@uao.edu.co"
-  #facebook: deanattali
+  facebook: dan.tobon43
+  instagram: danito_bon
   github: danielTobon43
   researchgate: Daniel_Tobon2
-  #twitter: daattali
-#  reddit: yourname
   linkedin: danieltobonco43
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  youtube: user/deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
-#  ORCID: your ORCID ID
-#  google-scholar: your google scholar
+  telephone: +530831504698
+# twitter: daattali
+# reddit: yourname  
+# xing: yourname
+# stackoverflow: "3943160/daattali"
+# snapchat: deanat78
+# youtube: user/deanat78
+# spotify: yourname 
+# steam: deanat78
+# twitch: yourname
+# yelp: yourname
+# telegram: yourname
+# calendly: yourname
+# mastodon: instance.url/@username
+# ORCID: your ORCID ID
+# google-scholar: your google scholar
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
@@ -71,17 +71,17 @@ social-network-links:
 # --- General options --- #
 
 # Select which social network share links to show in posts
-share-links-active:
-  #twitter: true
-  #facebook: true
+share-links-active:  
+  facebook: true
   researchgate: true
   github: true
   linkedin: true
   vk: false
+  #twitter: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-#url-pretty: "MyWebsite.com"
+url-pretty: "https://github.com/danielTobon43"
 
 # Create a "tags" index page and make tags on each post clickable
 #link-tags: true
@@ -203,15 +203,15 @@ defaults:
      type: "posts"
    values:
      layout: "post"
-     comments: true  # add comments to all blog posts
+     comments: false  # add comments to all blog posts
      social-share: true # add social media sharing buttons to all blog posts
      readtime: false # add estimated reading time on all blog posts
-  # -
-    # scope:
-    #   path: "" # all files
-    # values:
-    #   layout: "page"
-    #   show-avatar: true
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
+      # show-avatar: true
 
 # Exclude these files from production site
 exclude:
