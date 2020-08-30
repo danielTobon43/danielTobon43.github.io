@@ -7,7 +7,7 @@ cover-img: /pages/Datasets/banner.png
 ---
 In this page you will find some datasets for 3D mapping<br>
 
-<img src="/pages/Datasets/banner.png" align="center"><br>
+<!-- <img src="/pages/Datasets/banner.png" align="center"><br> -->
 
 ## Trees image dataset
 80 photos: <a href="https://drive.google.com/drive/folders/15e5q8XZuJUcQLk_ynZeljlkJmXFAAqVG?usp=sharing">Tree 1</a><br>
