@@ -3,6 +3,7 @@ layout: page
 title: Datasets
 subtitle: Data sharing encourages more connection and collaboration between researchers
 thumbnail-img: /pages/Datasets/banner.png
+cover-img: /pages/Datasets/banner.png
 ---
 In this page you will find some datasets for 3D mapping<br>
 
