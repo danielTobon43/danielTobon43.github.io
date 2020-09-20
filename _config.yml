@@ -105,12 +105,12 @@ navbar-border-col: "#111111" #DDDDDD"
 
 page-col: "#FFFFFF"
 text-col: "#404040"
-link-col: "#111111" #"#008AFF"
+link-col: "#008AFF" #"#008AFF"
 
 hover-col: "#111111" #"#0085A1"
 
 
-footer-col: "#111111" #"#EAEAEA"
+footer-col: "#EAEAEA" #"#EAEAEA"
 footer-text-col: "#111111" #"#777777"
 footer-link-col: "#111111" #"#404040"
 
