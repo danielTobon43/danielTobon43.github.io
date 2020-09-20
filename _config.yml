@@ -103,8 +103,8 @@ navbar-col: "#111111"
 navbar-text-col: "white"
 navbar-border-col: "#111111" #DDDDDD"
 
-page-col: "#FFFFFF"
-text-col: "#404040"
+page-col: "#111111" #"#FFFFFF"
+text-col: "white" #"#404040"
 link-col: "#008AFF" #"#008AFF"
 
 hover-col: "#111111" #"#0085A1"
