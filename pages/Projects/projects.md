@@ -35,6 +35,7 @@ In this section you will find the documentation related to each project that I h
 - [<b>esp32-client-server</b>](https://github.com/danielTobon43/esp32-client-server-library): This is a C program for the sta and ap module of the esp32 using ESP_IDF framework
 
 ## Image processing
+- **[<b>LineScanCamera</b>](https://github.com/danielTobon43/LineScanCam-op)**: This is a python implementation of a Line scan camera using an area scan camera in OpenCV 4.1.2
 - **[<b>canopy-missing</b>](https://github.com/danielTobon43/canopyMissing)**: C++ algorithm to estimate percent canopy missing of a stem tree using PCL 1.9.1 and OpenCV 4.1.0
 - **[<b>stitching</b>](https://github.com/danielTobon43/stiching-opencv)**: C++ application to create a panorama from multiple images in OpenCV.
 - **[<b>gui-control-points</b>](https://github.com/danielTobon43/gui-Control-points)**: Gui to select image pixel reference for iTree3DMap. This program uses the control point registration GUI of OpenMVG as base.
