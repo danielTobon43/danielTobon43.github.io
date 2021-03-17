@@ -3,6 +3,7 @@ layout: page
 title: Projects
 subtitle: 
 <!-- js: "/js/main.js" -->
+css: "/assets/css/projects.css"
 ---
 
 <div class="btn-group" style="padding-bottom:3px;">
@@ -17,7 +18,7 @@ $("#next, #prev").click(function(e){
     $.ajax({
         url: 'http://danieltobon43.pythonanywhere.com/projects',
 
-        data: 'projects',
+        // data: 'projects',
         type: 'GET',
         success: function (data) {
             $('#displayResults').html(data);
