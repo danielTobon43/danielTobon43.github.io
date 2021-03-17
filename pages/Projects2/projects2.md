@@ -115,8 +115,10 @@ $.ajax({
           img.height = 100
           img.onclick = function() {
           window.location.href = value.url;}
-          td.appendChild(document.createTextNode(value.name)) ; 
-          td.appendChild(img)
+          td.appendChild(document.createTextNode(value.name)); 
+          var br = document.createElement("br");
+          td.appendChild(br);
+          td.appendChild(img);
           td.appendChild(document.createTextNode(value.description));
           
           col++;
