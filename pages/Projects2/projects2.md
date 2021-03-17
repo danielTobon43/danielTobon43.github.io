@@ -3,15 +3,57 @@ layout: page
 title: Projects
 subtitle: 
 <!-- js: "/js/projects.js" -->
-css: "/assets/css/projects.css"
+<!-- css: "/assets/css/projects.css" -->
 ---
 
 <p>Before the script...</p>
 
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height:200px;
+  background-color: #111111; 
+  color:white;
+}
+
+th, tr, td {
+  padding: 0px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  max-width: 55px;
+  height:100%;
+  
+}
+
+
+text {
+  padding: 0px;
+  width: 100px;
+  height:80px;
+  border-bottom: 1px solid #ddd;
+  text-align:center;  
+  margin:0px 10px;
+}
+
+img {
+  padding: 0px;
+  width: 100px;
+  height:80px;
+  border-bottom: 1px solid #ddd;
+  vertical-align:top; 
+  margin:0px 10px;
+  max-width: 900px;
+  
+}
+
+tr:hover {background-color:'#111111';}
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div id="container">
-  <div id="output">NO DATA 12</div>
+  <div id="output">NO DATA 113</div>
   <div id="output2">NO DATA 4</div>
 </div>
 
