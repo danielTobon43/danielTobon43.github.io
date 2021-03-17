@@ -119,6 +119,7 @@ $.ajax({
           var br = document.createElement("br");
           td.appendChild(br);
           td.appendChild(img);
+          td.appendChild(br);
           td.appendChild(document.createTextNode(value.description));
           
           col++;
