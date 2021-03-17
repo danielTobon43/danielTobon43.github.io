@@ -7,8 +7,6 @@ subtitle:
 <!-- css: "/assets/css/bootstrap.css" -->
 ---
 
-<p>Before the script...</p>
-
 <style>
 table {
   border-collapse: collapse;
@@ -28,58 +26,24 @@ th, tr, td {
   
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block;
-}
-
-div.relative {
-  position: relative;
-  left: 0px;
-  /*border: 3px solid #73AD21;*/
-}
-
-
-
-/*text {
-  padding: 0px;
-  width: 100px;
-  height:80px;
-  border-bottom: 1px solid #ddd;
-  text-align:center;  
-  margin:0px 10px;
-}*/
-
 img {
   padding: 0px;
   width: 100px;
   height:80px;
   
-  vertical-align:top; 
+  vertical-align:middle; 
   margin:0px 10px;
   max-width: 900px;
   
 }
 
-tr:hover {background-color:'#111111';}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div id="container">
-  <div id="output">NO DATA 113</div>
-  <div id="output2">NO DATA 4</div>
+  <div id="output"></div>
+  <div id="output2"></div>
 </div>
 
 <script>
@@ -157,8 +121,13 @@ tr:hover {background-color:'#111111';}
               img.onclick = function() {
                 window.location.href = value.url;
               }
+              var a = document.createElement('a');
+              var linkText = document.createTextNode(value.name);
+              a.appendChild(linkText);
+              a.title = value.name;
+              a.href = value.url;
               div1.appendChild(img);
-              div2.appendChild(document.createTextNode(value.name));
+              div2.appendChild(a);              
               div3.appendChild(document.createTextNode(value.description));
               td.appendChild(div1)
               td.appendChild(div2)
@@ -172,9 +141,14 @@ tr:hover {background-color:'#111111';}
               var td = table.rows[row].cells[1];
               var img = document.createElement("img");
               img.src = value.images;
+              var a = document.createElement('a');
+              var linkText = document.createTextNode(value.name);
+              a.appendChild(linkText);
+              a.title = value.name;
+              a.href = value.url;
               
               div1.appendChild(img);
-              div2.appendChild(document.createTextNode(value.name));
+              div2.appendChild(a);
               div3.appendChild(document.createTextNode(value.description));
               td.appendChild(div1)
               td.appendChild(div2)
@@ -202,6 +176,14 @@ tr:hover {background-color:'#111111';}
   
 
  tableFillData(); 
+</script>
+
+<script>
+  function urlRepo(text,url) {
+  var str = text;
+  var result = str.link(url);
+  return result;
+}
 </script>
 
 
