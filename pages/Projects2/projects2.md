@@ -54,6 +54,12 @@ function JsonpCallback(json)  {
 
   <p>...After the script.</p>
  -->
+
+
+<div id="container">
+  <div id="output">NO DATA</div>
+</div>
+
 <script>
   var url = "http://danieltobon43.pythonanywhere.com/projects";
 
@@ -71,7 +77,3 @@ $.ajax({
   
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-<div id="container">
-  <div id="output">NO DATA</div>
-</div>
