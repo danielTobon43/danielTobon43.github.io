@@ -28,7 +28,7 @@ $.ajax({
   success: function(data) {
     // document.getElementById('output').innerHTML = data.total;
     // document.getElementById('output').innerHTML = "rico";
-    document.getElementById('output').innerHTML = data;
+    document.getElementById('output').innerHTML = data.projects;
   },
   error: function(error) {
     //What do you want to do with the error?
