@@ -27,6 +27,22 @@ th, tr, td {
   
 }
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
 div.relative {
   position: relative;
   left: 0px;
@@ -48,7 +64,7 @@ img {
   padding: 0px;
   width: 100px;
   height:80px;
-  border-bottom: 1px solid #ddd;
+  
   vertical-align:top; 
   margin:0px 10px;
   max-width: 900px;
