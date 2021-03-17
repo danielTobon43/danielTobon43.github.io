@@ -197,7 +197,7 @@ $.ajax({
             }); 
    
     */
-    document.getElementById('output').innerHTML = data
+    document.getElementById('output').innerHTML = table
   },
   error: function(error) {
     //What do you want to do with the error?
