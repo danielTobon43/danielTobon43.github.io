@@ -13,6 +13,7 @@ subtitle:
 
 <div id="container">
   <div id="output">NO DATA 3</div>
+  <div id="output2">NO DATA 1</div>
 </div>
 
 <script>
@@ -23,10 +24,12 @@ $.ajax({
   cache: false,
   url: url,
   success: function(data) {
-    document.getElementById('output').innerHTML = data.total;
+    // document.getElementById('output').innerHTML = data.total;
+    document.getElementById('output').innerHTML = "rico";
   },
   error: function(error) {
     //What do you want to do with the error?
+    document.getElementById('output2').innerHTML = "error nene";
   },
 });
   
