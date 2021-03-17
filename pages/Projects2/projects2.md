@@ -17,7 +17,7 @@ subtitle:
 </div>
 
 <script>
-  var url = "https://danieltobon43.pythonanywhere.com/projects";
+    var url = "https://danieltobon43.pythonanywhere.com/projects";
   // var url = "https://sourceforge.net/projects/kaais/files/stats/json?start_date=2013-08-18&end_date=2018-04-19";
 
 
@@ -25,10 +25,33 @@ $.ajax({
   method: "GET",
   cache: false,
   url: url,
+  dataType: "json",
   success: function(data) {
     // document.getElementById('output').innerHTML = data.total;
     // document.getElementById('output').innerHTML = "rico";
-    document.getElementById('output').innerHTML = data.projects;
+    /* alert(JSON.stringify(data, null, 4)) */
+    data = JSON.stringify([data.projects]);
+    data = JSON.parse(data);
+    
+    
+    data.forEach(obj => {
+        
+      
+        Object.entries(obj).forEach(([key, value]) => {
+        
+            Object.entries(value).forEach(([key, value]) => {
+            console.log(`${key} ${value}`);
+            });
+            
+                                
+            
+            console.log('-------------------');
+        });
+        
+    });
+   
+    
+    document.getElementById('output').innerHTML = data
   },
   error: function(error) {
     //What do you want to do with the error?
