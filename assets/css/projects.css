@@ -1,9 +1,9 @@
-body {
+table {
   margin: 0;
   
   width: 30%;
   
-  text-align: center;
+  text-align: left;
   table-layout: fixed;
   
   background-color: #111111; 
