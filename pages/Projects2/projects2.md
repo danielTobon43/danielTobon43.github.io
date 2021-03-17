@@ -2,11 +2,12 @@
 layout: page
 title: Projects
 subtitle: 
+js: "/js/main.js"
 ---
 
 You can see part of my portfolio below. Clicking the logos will bring you to their github page.
 
-Visit [my GitHub](https://github.com/kootenpv/) for more source code.
+<!-- Visit [my GitHub](https://github.com/kootenpv/) for more source code. -->
 
 <table id="repo-table">
 <tbody>
