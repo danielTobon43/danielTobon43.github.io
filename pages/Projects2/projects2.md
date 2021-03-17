@@ -14,7 +14,7 @@ table {
   width: 100%;
   height:200px;
   background-color: #111111; 
-  color:white;
+  color:#111111;
 }
 
 th, tr, td {
