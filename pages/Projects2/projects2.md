@@ -87,17 +87,19 @@ tr:hover {background-color:'#111111';}
   function tableCreate(table_id,rows,cols){
     var body = document.body;
     tbl = document.createElement(table_id);
+
+    var total_rows = Math.round(rows/2);
   
-    for(var i = 0; i < rows; i++){
+    for(var i = 0; i < total_rows; i++){
         var tr = tbl.insertRow();           
         for(var j = 0; j < cols; j++){            
-            if(i == rows){   
+            if(i == total_rows){   
             var td = tr.insertCell();               
                 break;                
                 
             } else {            
                 var td = tr.insertCell();
-                if(i == rows ){
+                if(i == total_rows ){
                     td.setAttribute('rowSpan', '2');  
                     
                 }
