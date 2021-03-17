@@ -207,7 +207,9 @@ $.ajax({
 
 }
 
-
+tableFillData();
 </script>
+
+
 
 
