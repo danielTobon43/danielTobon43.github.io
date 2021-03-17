@@ -18,25 +18,25 @@ css: "/assets/css/projects.css"
 <script>
    
   function tableCreate(table_id,rows,cols){
-    var body = document.body,
-        tbl  = document.createElement(table_id);
-
+    var body = document.body;
+    tbl = document.createElement(table_id);
+    tbl.style.width = '100%';
+    tbl.setAttribute('border', '0');
+    tbl.setAttribute('background-color', '#111111');
+    tbl.setAttribute('margin', '0');
+    tbl.setAttribute('background-color', '#111111');
     for(var i = 0; i < rows; i++){
-        var tr = tbl.insertRow();  
-         
-        
-        for(var j = 0; j < cols; j++){
-            
+        var tr = tbl.insertRow();           
+        for(var j = 0; j < cols; j++){            
             if(i == rows){   
             var td = tr.insertCell();               
                 break;                
                 
-            } else {
-            
+            } else {            
                 var td = tr.insertCell();
                 if(i == rows ){
-                    td.setAttribute('rowSpan', '2');
-                   
+                    td.setAttribute('rowSpan', '2'); 
+                    td.setAttribute('vertical-align', 'middle');              
                 }
             }            
         }       
@@ -59,8 +59,6 @@ css: "/assets/css/projects.css"
       url: url,
       dataType: "json",
       success: function(data) {
-    
-        
 
         var key, rows = 0;
         for(key in data.projects) {
@@ -117,9 +115,7 @@ css: "/assets/css/projects.css"
               col=0;
               row++;        
             
-            }
-        
-            
+            }         
           }); 
         }); 
 
