@@ -4,7 +4,7 @@ title: Projects
 subtitle: 
 <!-- js: "/js/projects.js" -->
 <!-- css: "/assets/css/projects.css" -->
-css: "/assets/css/bootstrap.css"
+<!-- css: "/assets/css/bootstrap.css" -->
 ---
 
 <p>Before the script...</p>
@@ -87,15 +87,6 @@ tr:hover {background-color:'#111111';}
   function tableCreate(table_id,rows,cols){
     var body = document.body;
     tbl = document.createElement(table_id);
-    
-    /* tbl.setAttribute('border', '0');    
-    tbl.setAttribute('margin', '0'); 
-        tbl.setAttribute("style", "textAlign: center;");
-        tbl.setAttribute("style", "color: rgb(255,255,255);");
-    tbl.setAttribute("style", "background-color: #111111;");    
-        tbl.setAttribute("width","300px");
-        tbl.setAttribute("height","200px"); */
-    /* tbl.setAttribute("style", "text-align: center;"); */
   
     for(var i = 0; i < rows; i++){
         var tr = tbl.insertRow();           
@@ -107,7 +98,7 @@ tr:hover {background-color:'#111111';}
             } else {            
                 var td = tr.insertCell();
                 if(i == rows ){
-                    td.setAttribute('rowSpan', '5');  
+                    td.setAttribute('rowSpan', '2');  
                     
                 }
             }            
@@ -147,7 +138,9 @@ tr:hover {background-color:'#111111';}
         table = tableCreate("table",rows,2);
         
         var row = 0;
-        var col = 0;    
+        var col = 0;   
+
+
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
                       
