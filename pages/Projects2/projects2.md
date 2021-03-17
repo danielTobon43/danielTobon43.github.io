@@ -20,10 +20,6 @@ css: "/assets/css/projects.css"
   function tableCreate(table_id,rows,cols){
     var body = document.body;
     tbl = document.createElement(table_id);
-    tbl.style.width = '100%';
-    tbl.setAttribute('border', '0');    
-    tbl.setAttribute('margin', '0'); 
-    tbl.setAttribute("style", "background-color: #111111;");   
     for(var i = 0; i < rows; i++){
         var tr = tbl.insertRow();           
         for(var j = 0; j < cols; j++){            
@@ -34,12 +30,13 @@ css: "/assets/css/projects.css"
             } else {            
                 var td = tr.insertCell();
                 if(i == rows ){
-                    td.setAttribute('rowSpan', '2');                                
+                    td.setAttribute('rowSpan', '5');  
+                    
                 }
             }            
         }       
         
-    }    
+    }
     return tbl;
 }
   
@@ -58,7 +55,8 @@ css: "/assets/css/projects.css"
       dataType: "json",
       success: function(data) {
 
-        var key, rows = 0;
+        var key=0
+        var rows = 0;
         for(key in data.projects) {
           if(data.projects.hasOwnProperty(key)) {
             rows++;
@@ -78,36 +76,32 @@ css: "/assets/css/projects.css"
                       
             if (col == 0){
             
-              var div = document.createElement("div");    
+              var div1 = document.createElement("div");  
+              var div2 = document.createElement("div"); 
+              var div3 = document.createElement("div"); 
               var td = table.rows[row].cells[0];
               var img = document.createElement("img");             
-              img.src = value.images;
-              img.width = 240
-              img.height = 100
+              img.src = value.images;              
               img.onclick = function() {
                 window.location.href = value.url;
               }
-              td.appendChild(document.createTextNode(value.name)); 
-              var br = document.createElement("br");
-              td.appendChild(br);
-              td.appendChild(img);              
-              td.appendChild(document.createTextNode(value.description));                           
-              col++;
-            
+              div1.appendChild(img);
+              div2.appendChild(document.createTextNode(value.name));
+              div3.appendChild(document.createTextNode(value.description));
+              td.appendChild(div1)
+              td.appendChild(div2)
+              td.appendChild(div3)
+              col++;  
             
             }else{
               var div = document.createElement("div");   
               var td = table.rows[row].cells[1];
               var img = document.createElement("img");
               img.src = value.images;
-              img.width = 240
-              img.height = 100
-              img.onclick = function() {
-                window.location.href = value.url;
-              }
+              
               td.appendChild(document.createTextNode(value.name)); 
-              var br = document.createElement("br");
-              td.appendChild(br);
+              
+        
               td.appendChild(img);              
               td.appendChild(document.createTextNode(value.description));
               col=0;
@@ -128,8 +122,9 @@ css: "/assets/css/projects.css"
     }); 
 
   }
+  
 
-  tableFillData();
+ tableFillData(); 
 </script>
 
 
