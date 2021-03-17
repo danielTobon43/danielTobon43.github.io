@@ -87,6 +87,16 @@ tr:hover {background-color:'#111111';}
   function tableCreate(table_id,rows,cols){
     var body = document.body;
     tbl = document.createElement(table_id);
+    
+    /* tbl.setAttribute('border', '0');    
+    tbl.setAttribute('margin', '0'); 
+        tbl.setAttribute("style", "textAlign: center;");
+        tbl.setAttribute("style", "color: rgb(255,255,255);");
+    tbl.setAttribute("style", "background-color: #111111;");    
+        tbl.setAttribute("width","300px");
+        tbl.setAttribute("height","200px"); */
+    /* tbl.setAttribute("style", "text-align: center;"); */
+  
     for(var i = 0; i < rows; i++){
         var tr = tbl.insertRow();           
         for(var j = 0; j < cols; j++){            
@@ -134,7 +144,7 @@ tr:hover {background-color:'#111111';}
         data = JSON.stringify([data.projects]);    
         data = JSON.parse(data);
         
-        table = tableCreate("table",1,rows);
+        table = tableCreate("table",rows,2);
         
         var row = 0;
         var col = 0;    
@@ -161,16 +171,21 @@ tr:hover {background-color:'#111111';}
               col++;  
             
             }else{
-              var div = document.createElement("div");   
+              var div1 = document.createElement("div");  
+              var div2 = document.createElement("div"); 
+              var div3 = document.createElement("div");    
               var td = table.rows[row].cells[1];
               var img = document.createElement("img");
               img.src = value.images;
               
-              td.appendChild(document.createTextNode(value.name)); 
+              div1.appendChild(img);
+              div2.appendChild(document.createTextNode(value.name));
+              div3.appendChild(document.createTextNode(value.description));
+              td.appendChild(div1)
+              td.appendChild(div2)
+              td.appendChild(div3)
               
-        
-              td.appendChild(img);              
-              td.appendChild(document.createTextNode(value.description));
+             
               col=0;
               row++;        
             
