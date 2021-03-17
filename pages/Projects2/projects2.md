@@ -2,8 +2,8 @@
 layout: page
 title: Projects
 subtitle: 
-js: "/js/projects.js"
-css: "/assets/css/projects.css"
+<!-- js: "/js/projects.js" -->
+<!-- css: "/assets/css/projects.css" -->
 ---
 
 <html>
@@ -15,7 +15,7 @@ css: "/assets/css/projects.css"
     <div id="output">NO DATA 2</div>
   </div>
 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 
   <script>
