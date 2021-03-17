@@ -23,18 +23,19 @@ th, tr, td {
   border-bottom: 1px solid #ddd;
   max-width: 55px;
   height:100%;
+  background-color: #111111; 
   
 }
 
 
-text {
+/*text {
   padding: 0px;
   width: 100px;
   height:80px;
   border-bottom: 1px solid #ddd;
   text-align:center;  
   margin:0px 10px;
-}
+}*/
 
 img {
   padding: 0px;
