@@ -6,19 +6,17 @@ js: "/js/projects.js"
 css: "/assets/css/projects.css"
 ---
 
-<!DOCTYPE HTML>
 <html>
-
 <body>
 
 
   <p>Before the script...</p>
   <div id="container">
-    <div id="output">NO DATA</div>
+    <div id="output">NO DATA 2</div>
   </div>
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-  
+
 
   <script>
     var url = "http://danieltobon43.pythonanywhere.com/projects";
@@ -32,6 +30,7 @@ css: "/assets/css/projects.css"
       },
       error: function(error) {
         //What do you want to do with the error?
+        document.getElementById('output').innerHTML = "something wrong!";
       },
     });
 
