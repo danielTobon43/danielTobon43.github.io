@@ -6,8 +6,7 @@ subtitle:
 <!-- css: "/assets/css/projects.css" -->
 ---
 
-<html>
-<body>
+
 
 
   <p>Before the script...</p>
@@ -38,6 +37,3 @@ subtitle:
 
   <p>...After the script.</p>
 
-</body>
-
-</html>
