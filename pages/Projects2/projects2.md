@@ -14,7 +14,7 @@ table {
   width: 100%;
   height:200px;
   background-color: #111111; 
-  color:#111111;
+  color:white;
 }
 
 th, tr, td {
@@ -26,6 +26,13 @@ th, tr, td {
   background-color: #111111; 
   
 }
+
+div.relative {
+  position: relative;
+  left: 0px;
+  /*border: 3px solid #73AD21;*/
+}
+
 
 
 /*text {
