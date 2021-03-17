@@ -17,7 +17,9 @@ subtitle:
 </div>
 
 <script>
-  var url = "http://danieltobon43.pythonanywhere.com/projects";
+  // var url = "http://danieltobon43.pythonanywhere.com/projects";
+  var url = "https://sourceforge.net/projects/kaais/files/stats/json?start_date=2013-08-18&end_date=2018-04-19";
+
 
 $.ajax({
   method: "GET",
