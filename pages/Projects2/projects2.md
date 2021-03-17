@@ -10,9 +10,7 @@ subtitle:
 
 
   <p>Before the script...</p>
-  <div id="container">
-    <div id="output">NO DATA 2</div>
-  </div>
+
 
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
