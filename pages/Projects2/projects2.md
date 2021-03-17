@@ -21,10 +21,9 @@ css: "/assets/css/projects.css"
     var body = document.body;
     tbl = document.createElement(table_id);
     tbl.style.width = '100%';
-    tbl.setAttribute('border', '0');
-    tbl.setAttribute('background-color', '#111111');
-    tbl.setAttribute('margin', '0');
-    tbl.setAttribute('background-color', '#111111');
+    tbl.setAttribute('border', '0');    
+    tbl.setAttribute('margin', '0'); 
+    tbl.setAttribute("style", "background-color: #111111;");   
     for(var i = 0; i < rows; i++){
         var tr = tbl.insertRow();           
         for(var j = 0; j < cols; j++){            
@@ -35,8 +34,7 @@ css: "/assets/css/projects.css"
             } else {            
                 var td = tr.insertCell();
                 if(i == rows ){
-                    td.setAttribute('rowSpan', '2'); 
-                    td.setAttribute('vertical-align', 'middle');              
+                    td.setAttribute('rowSpan', '2');                                
                 }
             }            
         }       
