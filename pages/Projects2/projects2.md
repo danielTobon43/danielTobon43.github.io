@@ -5,13 +5,22 @@ subtitle:
 js: "/js/projects.js"
 css: "/assets/css/projects.css"
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<div id="container">
-  <div id="output">NO DATA</div>
-</div>
+<!DOCTYPE HTML>
+<html>
 
-<script>
+<body>
+
+
+  <p>Before the script...</p>
+  <div id="container">
+    <div id="output">NO DATA</div>
+  </div>
+
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+  
+
+  <script>
     var url = "http://danieltobon43.pythonanywhere.com/projects";
 
     $.ajax({
@@ -27,3 +36,9 @@ css: "/assets/css/projects.css"
     });
 
 </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
