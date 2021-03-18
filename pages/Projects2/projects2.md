@@ -28,8 +28,8 @@ subtitle:
 	}
 
 	img {
-	  /*width: 100px;
-	  height:80px;  */
+	  width: 100px;
+	  height:80px;  
 	  vertical-align:middle; 
 	}
 
