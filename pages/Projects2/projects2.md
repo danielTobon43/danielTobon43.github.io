@@ -112,7 +112,7 @@ subtitle:
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
 
-          	if (value.forks == false){
+          	
 
           		if(value.name=='danieltobon43.github.io' || value.name == 'danieltobon43'){
           			return;
@@ -177,7 +177,7 @@ subtitle:
 	            
 	            }       
 
-          	}
+          	
 
           	
           }); 
