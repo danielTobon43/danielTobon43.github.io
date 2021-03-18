@@ -12,7 +12,7 @@ subtitle:
 	  /*border-collapse: collapse;
 	  width: 100%;
 	  height:200px;*/
-	  background-color: #111111; 
+	  /*background-color: #111111; */
 	  position: relative;
 	  /*color:white;*/
 	}
@@ -35,6 +35,7 @@ subtitle:
 
 	div{
 		margin: auto;
+		padding: 20px;
 	}
 </style>
 
@@ -168,7 +169,8 @@ subtitle:
 
       
         // document.body.appendChild(table);     
-        document.getElementById('output').appendChild(table)
+        // document.getElementById('output').appendChild(table)
+        document.getElementById('output').innerHTML = table;
       },
       error: function(error) {
         //What do you want to do with the error?
