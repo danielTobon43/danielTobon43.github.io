@@ -114,7 +114,7 @@ subtitle:
 
           	
 
-          		if(value.name=='danieltobon43.github.io' || value.name == 'danieltobon43'){
+          		if(value.name=='danieltobon43.github.io' || value.name == 'danielTobon43'){
           			return;
           		}
                       
