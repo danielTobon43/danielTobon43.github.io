@@ -35,7 +35,9 @@ subtitle:
 
 	.center{
 		margin: auto;
-		padding: 20px;
+		/*padding: 40px;*/
+		display: flex;
+  		justify-content: center;
 	}
 </style>
 
@@ -109,6 +111,10 @@ subtitle:
 
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
+
+          	if(value.name=='danieltobon43.github.io'){
+          		console.log("found: " + value.name)
+          	}
                       
             if (col == 0){
             
