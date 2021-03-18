@@ -1,17 +1,17 @@
 table {
-  border-collapse: collapse;
-  width: 100%;
-  height:200px;
+  /*border-collapse: collapse;*/
+  /*width: 100%;
+  height:200px;*/
   background-color: #111111; 
   color:white;
-  text-align:center;
+  
 }
 
 th, tr, td {
   /*padding: 0px;*/
   text-align: center;
-  border-bottom: 1px solid #ddd;
-  max-width: 55px;
+  /*border-bottom: 1px solid #ddd;*/
+  /*max-width: 55px;*/
   height:100%;
   background-color: #111111; 
   
