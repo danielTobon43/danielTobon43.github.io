@@ -112,8 +112,10 @@ subtitle:
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
 
-          	if(value.name=='danieltobon43.github.io'){
-          		console.log("found: " + value.name)
+          	if (value['fork'] == False){
+
+          		if(value.name=='danieltobon43.github.io' || value.name == 'danieltobon43'){
+          		continue;
           	}
                       
             if (col == 0){
@@ -152,7 +154,7 @@ subtitle:
 
               div2.classList.add('center');
               div3.classList.add('center');
-              
+
               var td = table.rows[row].cells[1];
               var img = document.createElement("img");
               img.src = value.images;
@@ -174,6 +176,11 @@ subtitle:
               row++;        
             
             }         
+
+
+          	}
+
+          	
           }); 
         }); 
 
