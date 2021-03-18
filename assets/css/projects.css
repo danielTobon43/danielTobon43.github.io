@@ -1,8 +1,13 @@
+---
+layout: null
+---
+
 table {
   /*border-collapse: collapse;
   width: 100%;
   height:200px;*/
   background-color: #111111; 
+  position: relative;
   /*color:white;*/
 }
 
