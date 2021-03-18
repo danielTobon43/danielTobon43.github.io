@@ -149,6 +149,10 @@ subtitle:
               var div1 = document.createElement("div");  
               var div2 = document.createElement("div"); 
               var div3 = document.createElement("div");    
+
+              div2.classList.add('center');
+              div3.classList.add('center');
+              
               var td = table.rows[row].cells[1];
               var img = document.createElement("img");
               img.src = value.images;
