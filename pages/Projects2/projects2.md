@@ -33,7 +33,7 @@ subtitle:
 	  vertical-align:middle; 
 	}
 
-	div{
+	.center{
 		margin: auto;
 		padding: 20px;
 	}
@@ -117,8 +117,8 @@ subtitle:
               var div3 = document.createElement("div"); 
 
               // div1.classList.add('center');
-              // div2.classList.add('center');
-              // div3.classList.add('center');
+              div2.classList.add('center');
+              div3.classList.add('center');
 
               var td = table.rows[row].cells[0];
               var img = document.createElement("img");             
@@ -169,8 +169,8 @@ subtitle:
 
       
         // document.body.appendChild(table);     
-        // document.getElementById('output').appendChild(table)
-        document.getElementById('output').innerHTML = table;
+        document.getElementById('output').appendChild(table)
+        // document.getElementById('output').innerHTML = table;
       },
       error: function(error) {
         //What do you want to do with the error?
