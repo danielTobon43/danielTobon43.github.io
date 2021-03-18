@@ -84,9 +84,9 @@ css: "/assets/css/projects.css"
               var div2 = document.createElement("div"); 
               var div3 = document.createElement("div"); 
 
-              div1.classList.add('center');
-              div2.classList.add('center');
-              div3.classList.add('center');
+              // div1.classList.add('center');
+              // div2.classList.add('center');
+              // div3.classList.add('center');
 
               var td = table.rows[row].cells[0];
               var img = document.createElement("img");             
