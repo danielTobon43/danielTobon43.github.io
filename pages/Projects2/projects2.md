@@ -28,7 +28,7 @@ subtitle:
 	}
 
 	img {
-	  width: 400px;
+	  width: 300px;
 	  height:180px;  
 	  vertical-align:middle; 
 	}
