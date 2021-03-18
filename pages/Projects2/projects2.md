@@ -23,7 +23,7 @@ subtitle:
 	  /*border-bottom: 1px solid #ddd;*/
 	  /*max-width: 55px;*/
 	  /*height:100%;*/
-	  /*background-color: #111111; */
+	  background-color: #111111; 
 	  
 	}
 
