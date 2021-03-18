@@ -4,10 +4,11 @@ table {
   height:200px;
   background-color: #111111; 
   color:white;
+  text-align:center;
 }
 
 th, tr, td {
-  padding: 0px;
+  /*padding: 0px;*/
   text-align: center;
   border-bottom: 1px solid #ddd;
   max-width: 55px;
@@ -17,12 +18,12 @@ th, tr, td {
 }
 
 img {
-  padding: 0px;
+  /*padding: 0px;*/
   width: 100px;
   height:80px;
   
   vertical-align:middle; 
-  margin:0px 10px;
-  max-width: 900px;
+  /*margin:0px 10px;*/
+  /*max-width: 900px;*/
   
 }
