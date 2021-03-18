@@ -112,71 +112,70 @@ subtitle:
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
 
-          	if (value['fork'] == False){
+          	if (value.forks == false){
 
           		if(value.name=='danieltobon43.github.io' || value.name == 'danieltobon43'){
-          		continue;
-          	}
+          			return;
+          		}
                       
-            if (col == 0){
-            
-              var div1 = document.createElement("div");  
-              var div2 = document.createElement("div"); 
-              var div3 = document.createElement("div"); 
+	            if (col == 0){
+	            
+	              var div1 = document.createElement("div");  
+	              var div2 = document.createElement("div"); 
+	              var div3 = document.createElement("div"); 
 
-              // div1.classList.add('center');
-              div2.classList.add('center');
-              div3.classList.add('center');
+	              // div1.classList.add('center');
+	              div2.classList.add('center');
+	              div3.classList.add('center');
 
-              var td = table.rows[row].cells[0];
-              var img = document.createElement("img");             
-              img.src = value.images;              
-              img.onclick = function() {
-                window.location.href = value.url;
-              }
-              var a = document.createElement('a');
-              var linkText = document.createTextNode(value.name);
-              a.appendChild(linkText);
-              a.title = value.name;
-              a.href = value.url;
-              div1.appendChild(img);
-              div2.appendChild(a);              
-              div3.appendChild(document.createTextNode(value.description));
-              td.appendChild(div1)
-              td.appendChild(div2)
-              td.appendChild(div3)
-              col++;  
-            
-            }else{
-              var div1 = document.createElement("div");  
-              var div2 = document.createElement("div"); 
-              var div3 = document.createElement("div");    
+	              var td = table.rows[row].cells[0];
+	              var img = document.createElement("img");             
+	              img.src = value.images;              
+	              img.onclick = function() {
+	                window.location.href = value.url;
+	              }
+	              var a = document.createElement('a');
+	              var linkText = document.createTextNode(value.name);
+	              a.appendChild(linkText);
+	              a.title = value.name;
+	              a.href = value.url;
+	              div1.appendChild(img);
+	              div2.appendChild(a);              
+	              div3.appendChild(document.createTextNode(value.description));
+	              td.appendChild(div1)
+	              td.appendChild(div2)
+	              td.appendChild(div3)
+	              col++;  
+	            
+	            }else{
+	              var div1 = document.createElement("div");  
+	              var div2 = document.createElement("div"); 
+	              var div3 = document.createElement("div");    
 
-              div2.classList.add('center');
-              div3.classList.add('center');
+	              div2.classList.add('center');
+	              div3.classList.add('center');
 
-              var td = table.rows[row].cells[1];
-              var img = document.createElement("img");
-              img.src = value.images;
-              var a = document.createElement('a');
-              var linkText = document.createTextNode(value.name);
-              a.appendChild(linkText);
-              a.title = value.name;
-              a.href = value.url;
-              
-              div1.appendChild(img);
-              div2.appendChild(a);
-              div3.appendChild(document.createTextNode(value.description));
-              td.appendChild(div1)
-              td.appendChild(div2)
-              td.appendChild(div3)
-              
-             
-              col=0;
-              row++;        
-            
-            }         
-
+	              var td = table.rows[row].cells[1];
+	              var img = document.createElement("img");
+	              img.src = value.images;
+	              var a = document.createElement('a');
+	              var linkText = document.createTextNode(value.name);
+	              a.appendChild(linkText);
+	              a.title = value.name;
+	              a.href = value.url;
+	              
+	              div1.appendChild(img);
+	              div2.appendChild(a);
+	              div3.appendChild(document.createTextNode(value.description));
+	              td.appendChild(div1)
+	              td.appendChild(div2)
+	              td.appendChild(div3)
+	              
+	             
+	              col=0;
+	              row++;        
+	            
+	            }       
 
           	}
 
