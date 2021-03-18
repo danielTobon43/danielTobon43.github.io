@@ -3,7 +3,7 @@
 title: Projects
 subtitle: 
 <!-- js: "/js/projects.js" -->
-css: "/assets/css/projects.css"
+<!-- css: "/assets/css/projects.css" -->
 <!-- css: "/assets/css/beautifuljekyll.css" -->
 ---
 
