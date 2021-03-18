@@ -7,6 +7,37 @@ subtitle:
 <!-- css: "/assets/css/beautifuljekyll.css" -->
 ---
 
+<style>
+	table {
+	  /*border-collapse: collapse;
+	  width: 100%;
+	  height:200px;*/
+	  background-color: #111111; 
+	  position: relative;
+	  /*color:white;*/
+	}
+
+	th, tr, td {
+	  /*padding: 0px;*/
+	  text-align: center;
+	  /*border-bottom: 1px solid #ddd;*/
+	  /*max-width: 55px;*/
+	  /*height:100%;*/
+	  /*background-color: #111111; */
+	  
+	}
+
+	img {
+	  width: 100px;
+	  height:80px;  
+	  vertical-align:middle; 
+	}
+
+	div{
+		margin: auto;
+	}
+</style>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div id="container">
