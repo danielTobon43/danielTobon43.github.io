@@ -182,7 +182,7 @@ subtitle:
 			i++;
 
 	  }	
-		return tbl_element;
+	return tbl_element;
 		
 	}
 </script>
@@ -215,27 +215,34 @@ subtitle:
         table = tableCreate("table",rows,2);
         
         var row = 0;
-        var col = 0;  
-
-        var list_cv_projects = [];
-        data.forEach(obj => {
+        var col = 0;   
+				
+				var list_cv_projects = [];
+				
+				data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
           		if (value.topics.includes('opencv')){
-						console.log("repo: " + value.name + " has topic: opencv");
-						list_cv_projects.push(value);
-					}          	
+								console.log("repo: " + value.name + " has topic: opencv");
+								list_cv_projects.push(value);
+							}          	
           }); 
-        });
-
-        var sub_title = document.createElement('h');
-        subtitle.id = "subtitle_header";
+        }); 
+				
+				var sub_title = document.createElement('h');
         sub_title = "Computer Vision";
         document.getElementById('output').appendChild(document.createTextNode(sub_title));
-
-        tbl2 = groupTable(list_cv_projects);
-		document.getElementById('output').appendChild(tbl2);
-
-
+				
+				tbl2 = groupTable(list_cv_projects);
+				document.getElementById('output').appendChild(tbl2);
+				
+				console.log(list_cv_projects);
+				var i = 0, len = list_cv_projects.length;
+				while (i < len) {
+						// your code
+						i++;
+						console.log("yea");
+				}
+				
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
 
@@ -250,8 +257,11 @@ subtitle:
 	              var div1 = document.createElement("div");  
 	              var div2 = document.createElement("div"); 
 	              var div3 = document.createElement("div"); 
-
-	              div1.id = "DivImage";
+								<!-- div2.setAttribute("id", "Div2"); -->
+								
+								div2.id = "Div2";						
+							
+							
 
 	              // div1.classList.add('center');
 	              div2.classList.add('center');
@@ -279,9 +289,7 @@ subtitle:
 	            }else{
 	              var div1 = document.createElement("div");  
 	              var div2 = document.createElement("div"); 
-	              var div3 = document.createElement("div");
-
-	              div1.id = "DivImage";   
+	              var div3 = document.createElement("div");    
 
 	              div2.classList.add('center');
 	              div3.classList.add('center');
@@ -316,7 +324,7 @@ subtitle:
 
       
         // document.body.appendChild(table);     
-        document.getElementById('output').appendChild(table)
+        document.getElementById('output').appendChild(table);
         // document.getElementById('output').innerHTML = table;
       },
       error: function(error) {
