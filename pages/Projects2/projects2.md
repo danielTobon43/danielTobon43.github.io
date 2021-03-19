@@ -59,12 +59,21 @@ subtitle:
 		  color: white;
 		  font-size: 30px;
 	}
+
+	#title_header{
+		  padding: 0px;
+		  text-align: center;
+		  background: #1abc9c;
+		  color: white;
+		  font-size: 72px;
+		  font-family: "Lucida Console", "Courier New", monospace;
+	}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div id="container">
-  <div id="output">gg</div>
+  <div id="output"></div>
   <div id="output2"></div>
 </div>
 
@@ -227,6 +236,13 @@ subtitle:
 							}          	
           }); 
         }); 
+
+		var title = document.createElement('h');
+		title = "Projects"
+		title.id = 'title_header';
+        var sub_div0 = document.createElement('div');
+		sub_div0.appendChild(document.createTextNode(title));
+        document.getElementById('output').appendChild(sub_div0);
 				
 		var sub_title = document.createElement('h');
 		sub_title.id = 'subtitle_header';
