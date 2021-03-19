@@ -235,9 +235,6 @@ subtitle:
         tbl2 = groupTable(list_cv_projects);
 		document.getElementById('output').appendChild(tbl2);
 
-		sub_title = "Others";
-        document.getElementById('output').appendChild(document.createTextNode(sub_title));
-
 
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
