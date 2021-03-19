@@ -232,10 +232,20 @@ subtitle:
 		sub_title.id = 'subtitle_header';
 
         sub_title = "Computer Vision";
-        document.getElementById('output').appendChild(document.createTextNode(sub_title));
+        var sub_div1 = document.createElement('div');
+		sub_div1.appendChild(document.createTextNode(sub_title));
+        document.getElementById('output').appendChild(sub_div1);
 				
 		tbl2 = groupTable(list_cv_projects);
-		document.getElementById('output').appendChild(tbl2);
+
+		var sub_div2 = document.createElement('div');
+		sub_div2.appendChild(tbl2);
+		document.getElementById('output').appendChild(sub_div2);
+
+		sub_title = "Other";
+        var sub_div3 = document.createElement('div');
+		sub_div3.appendChild(document.createTextNode(sub_title));
+        document.getElementById('output').appendChild(sub_div3);
 		
 		console.log(list_cv_projects);
 		var i = 0, len = list_cv_projects.length;
