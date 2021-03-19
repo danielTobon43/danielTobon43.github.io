@@ -8,7 +8,7 @@ subtitle:
 ---
 
 <style>
-	table {
+	#table_cv {
 	  /*border-collapse: collapse;
 	  width: 100%;
 	  height:200px;*/
@@ -73,7 +73,7 @@ subtitle:
   function tableCreate(table_id,rows,cols){
     var body = document.body;
     tbl = document.createElement('table');
-    tbl.id = table_id;
+		tbl.id = table_id;
 
     var total_rows = Math.round(rows/2);
   
@@ -228,20 +228,22 @@ subtitle:
           }); 
         }); 
 				
-				var sub_title = document.createElement('h');
+		var sub_title = document.createElement('h');
+		sub_title.id = 'subtitle_header';
+
         sub_title = "Computer Vision";
         document.getElementById('output').appendChild(document.createTextNode(sub_title));
 				
-				tbl2 = groupTable(list_cv_projects);
-				document.getElementById('output').appendChild(tbl2);
-				
-				console.log(list_cv_projects);
-				var i = 0, len = list_cv_projects.length;
-				while (i < len) {
-						// your code
-						i++;
-						console.log("yea");
-				}
+		tbl2 = groupTable(list_cv_projects);
+		document.getElementById('output').appendChild(tbl2);
+		
+		console.log(list_cv_projects);
+		var i = 0, len = list_cv_projects.length;
+		while (i < len) {
+				// your code
+				i++;
+				console.log("yea");
+		}
 				
         data.forEach(obj => {
           Object.entries(obj).forEach(([key, value]) => {
