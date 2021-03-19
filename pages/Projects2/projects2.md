@@ -40,12 +40,16 @@ subtitle:
   		justify-content: center;
 	}
 
-	#DivImage{
-		margin: auto;
-		/*padding: 40px;*/
-		display: flex;
+	#DivImage{	
+			
   		justify-content: center;
   		border: 3px solid #73AD21;
+  		display: block;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: left;
 	}
 </style>
 
