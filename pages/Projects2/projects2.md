@@ -9,11 +9,11 @@ subtitle:
 
 <style>
 	#table_cv {
-	  /*border-collapse: collapse;*/
+	  /*border-collapse: collapse;
 	  width: 100%;
-	  height:200px;
+	  height:200px;*/
 	  /*background-color: #111111; */
-	  /*position: relative;*/
+	  position: relative;
 	  /*color:white;*/
 	}
 
@@ -53,7 +53,7 @@ subtitle:
 	}
 
 	#subtitle_header{
-		  padding: 0px;
+		  padding: 60px;
 		  text-align: left;
 		  background: #1abc9c;
 		  color: white;
@@ -235,12 +235,7 @@ subtitle:
         document.getElementById('output').appendChild(document.createTextNode(sub_title));
 				
 		tbl2 = groupTable(list_cv_projects);
-		var sub_div1 = document.createElement('div');
-		sub_div1.appendChild(tbl2);
-		document.getElementById('output').appendChild(sub_div1);
-
-		sub_title = "Other";
-        document.getElementById('output').appendChild(document.createTextNode(sub_title));
+		document.getElementById('output').appendChild(tbl2);
 		
 		console.log(list_cv_projects);
 		var i = 0, len = list_cv_projects.length;
