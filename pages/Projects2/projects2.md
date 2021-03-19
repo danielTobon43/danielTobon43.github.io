@@ -13,7 +13,7 @@ subtitle:
 	  width: 100%;
 	  height:200px;
 	  /*background-color: #111111; */
-	  position: relative;
+	  /*position: relative;*/
 	  /*color:white;*/
 	}
 
