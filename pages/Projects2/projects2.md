@@ -238,9 +238,7 @@ subtitle:
         }); 
 
 		var title = document.createElement('h1');
-        var title_Text = document.createTextNode("Projects");
-        title.appendChild(title_Text);
-        title.title = "Projects";
+        title.textContent  = "Projects";
         
 
 		// var title = document.createElement('h');
