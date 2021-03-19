@@ -39,6 +39,14 @@ subtitle:
 		display: flex;
   		justify-content: center;
 	}
+
+	#DivImage{
+		margin: auto;
+		/*padding: 40px;*/
+		display: flex;
+  		justify-content: center;
+  		border: 3px solid #73AD21;
+	}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -124,6 +132,8 @@ subtitle:
 	              var div2 = document.createElement("div"); 
 	              var div3 = document.createElement("div"); 
 
+	              div1.id = "DivImage";
+
 	              // div1.classList.add('center');
 	              div2.classList.add('center');
 	              div3.classList.add('center');
@@ -150,7 +160,9 @@ subtitle:
 	            }else{
 	              var div1 = document.createElement("div");  
 	              var div2 = document.createElement("div"); 
-	              var div3 = document.createElement("div");    
+	              var div3 = document.createElement("div");
+
+	              div1.id = "DivImage";   
 
 	              div2.classList.add('center');
 	              div3.classList.add('center');
