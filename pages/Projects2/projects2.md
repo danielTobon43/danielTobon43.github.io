@@ -64,7 +64,8 @@ subtitle:
    
   function tableCreate(table_id,rows,cols){
     var body = document.body;
-    tbl = document.createElement(table_id);
+    tbl = document.createElement('table');
+    tbl.id = table_id;
 
     var total_rows = Math.round(rows/2);
   
@@ -88,6 +89,94 @@ subtitle:
     return tbl;
 }
   
+</script>
+
+<script>
+	function groupTable(input_list){
+		tbl_element = tableCreate('table_cv',input_list.length,2);
+		
+		var i = 0, len = input_list.length;
+		var row = 0;
+    	var col = 0; 
+		
+	  while (i < len) {
+		value = input_list[i];
+		
+		if (col == 0){
+
+	            
+	        var div1 = document.createElement("div");  
+	        var div2 = document.createElement("div"); 
+	        var div3 = document.createElement("div"); 
+
+	          div1.id = "DivImage";
+
+	          // div1.classList.add('center');
+	          div2.classList.add('center');
+	          div3.classList.add('center');								
+
+	          var td = tbl_element.rows[row].cells[0];
+							console.log("yeah3");
+	          var img = document.createElement("img"); 							
+							
+	          img.src = value.images;              
+	          img.onclick = function() {
+	            window.location.href = value.url;
+	          }
+							
+	          var a = document.createElement('a');
+	          var linkText = document.createTextNode(value.name);
+	          a.appendChild(linkText);
+	              a.title = value.name;
+	              a.href = value.url;
+	              div1.appendChild(img);
+	              div2.appendChild(a);              
+	              div3.appendChild(document.createTextNode(value.description));
+	              td.appendChild(div1)
+	              td.appendChild(div2)
+	              td.appendChild(div3)
+	              col++;  
+
+	            
+            }else{
+              var div1 = document.createElement("div");  
+              var div2 = document.createElement("div"); 
+              var div3 = document.createElement("div");
+
+              div1.id = "DivImage";   
+
+              div2.classList.add('center');
+              div3.classList.add('center');
+							console.log("gh");
+
+              var td = tbl_element.rows[row].cells[1];
+							console.log("gh");
+              var img = document.createElement("img");
+              img.src = value.images;
+              var a = document.createElement('a');
+              var linkText = document.createTextNode(value.name);
+              a.appendChild(linkText);
+              a.title = value.name;
+              a.href = value.url;
+              
+              div1.appendChild(img);
+              div2.appendChild(a);
+              div3.appendChild(document.createTextNode(value.description));
+              td.appendChild(div1)
+              td.appendChild(div2)
+              td.appendChild(div3)
+              
+
+              col=0;
+              row++;        
+            
+            }
+			i++;
+
+	  }	
+		return tbl_element;
+		
+	}
 </script>
 
 
@@ -118,7 +207,27 @@ subtitle:
         table = tableCreate("table",rows,2);
         
         var row = 0;
-        var col = 0;   
+        var col = 0;  
+
+        var list_cv_projects = [];
+        data.forEach(obj => {
+          Object.entries(obj).forEach(([key, value]) => {
+          		if (value.topics.includes('opencv')){
+						console.log("repo: " + value.name + " has topic: opencv");
+						list_cv_projects.push(value);
+					}          	
+          }); 
+        });
+
+        var sub_title = document.createElement('h');
+        sub_title = "Computer Vision";
+        document.getElementById('output').appendChild(sub_title);
+
+        tbl2 = groupTable(list_cv_projects);
+		document.getElementById('output').appendChild(tbl2);
+
+		sub_title = "Others";
+        document.getElementById('output').appendChild(sub_title);
 
 
         data.forEach(obj => {
