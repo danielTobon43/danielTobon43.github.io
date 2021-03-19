@@ -30,7 +30,7 @@ subtitle:
 	img {
 	  width: 300px;
 	  height:180px;  
-	  vertical-align:middle; 
+	  vertical-align:top; 
 	}
 
 	.center{
@@ -49,7 +49,7 @@ subtitle:
 		height: 100%;
 		margin: 0;
 		padding: 0;
-		text-align: left;
+		text-align: center;
 	}
 </style>
 
