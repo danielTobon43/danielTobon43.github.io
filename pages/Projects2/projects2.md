@@ -235,7 +235,9 @@ subtitle:
         document.getElementById('output').appendChild(document.createTextNode(sub_title));
 				
 		tbl2 = groupTable(list_cv_projects);
-		document.getElementById('output').appendChild(tbl2);
+		var sub_div1 = document.createElement('div');
+		sub_div1.appendChild(tbl2);
+		document.getElementById('output').appendChild(sub_div1);
 
 		sub_title = "Other";
         document.getElementById('output').appendChild(document.createTextNode(sub_title));
