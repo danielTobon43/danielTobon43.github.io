@@ -51,6 +51,14 @@ subtitle:
 		padding: 0;
 		text-align: center;
 	}
+
+	#subtitle_header{
+		  padding: 60px;
+		  text-align: left;
+		  background: #1abc9c;
+		  color: white;
+		  font-size: 30px;
+	}
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -220,14 +228,15 @@ subtitle:
         });
 
         var sub_title = document.createElement('h');
+        subtitle.id = "subtitle_header";
         sub_title = "Computer Vision";
-        document.getElementById('output').appendChild(sub_title);
+        document.getElementById('output').appendChild(document.createTextNode(sub_title));
 
         tbl2 = groupTable(list_cv_projects);
 		document.getElementById('output').appendChild(tbl2);
 
 		sub_title = "Others";
-        document.getElementById('output').appendChild(sub_title);
+        document.getElementById('output').appendChild(document.createTextNode(sub_title));
 
 
         data.forEach(obj => {
