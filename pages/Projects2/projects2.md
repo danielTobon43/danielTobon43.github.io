@@ -9,9 +9,9 @@ subtitle:
 
 <style>
 	#table_cv {
-	  /*border-collapse: collapse;
+	  /*border-collapse: collapse;*/
 	  width: 100%;
-	  height:200px;*/
+	  height:200px;
 	  /*background-color: #111111; */
 	  position: relative;
 	  /*color:white;*/
@@ -236,6 +236,9 @@ subtitle:
 				
 		tbl2 = groupTable(list_cv_projects);
 		document.getElementById('output').appendChild(tbl2);
+
+		sub_title = "Other";
+        document.getElementById('output').appendChild(document.createTextNode(sub_title));
 		
 		console.log(list_cv_projects);
 		var i = 0, len = list_cv_projects.length;
