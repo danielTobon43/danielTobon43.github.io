@@ -53,7 +53,7 @@ subtitle:
 	}
 
 	#subtitle_header{
-		  padding: 60px;
+		  padding: 0px;
 		  text-align: left;
 		  background: #1abc9c;
 		  color: white;
