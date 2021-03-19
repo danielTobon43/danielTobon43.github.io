@@ -237,11 +237,17 @@ subtitle:
           }); 
         }); 
 
-		var title = document.createElement('h');
-		title = "Projects"
+		var title = document.createElement('h1');
+        var title_Text = document.createTextNode("Projects");
+        title.appendChild(title_Text);
+        title.title = "Projects";
+        
+
+		// var title = document.createElement('h');
+		// title = "Projects"
 		title.id = 'title_header';
         var sub_div0 = document.createElement('div');
-		sub_div0.appendChild(document.createTextNode(title));
+		sub_div0.appendChild(title);
         document.getElementById('output').appendChild(sub_div0);
 				
 		var sub_title = document.createElement('h');
