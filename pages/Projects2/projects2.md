@@ -70,6 +70,8 @@ subtitle:
 	}
 </style>
 
+<p style="display: none;" id="numRepos">0</p>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <div id="container">
@@ -196,17 +198,19 @@ subtitle:
 	}
 </script>
 
-
 <script>
+	
 
-  function tableFillData(){
-    var url = "https://danieltobon43.pythonanywhere.com/projects";     
+function getTotalRepos(url){
 
-    $.ajax({
+	var rowsInRepo = 0;
+
+	$.ajax({
       method: "GET",
       cache: false,
       url: url,
       dataType: "json",
+	  async : false, 
       success: function(data) {
 
         var key=0
@@ -217,153 +221,210 @@ subtitle:
           }
         }
         
-        console.log(rows);     
-        data = JSON.stringify([data.projects]);    
-        data = JSON.parse(data);
-        
-        table = tableCreate("table",rows,2);
-        
-        var row = 0;
-        var col = 0;   
-				
-				var list_cv_projects = [];
-				
-				data.forEach(obj => {
-          Object.entries(obj).forEach(([key, value]) => {
-          		if (value.topics.includes('opencv')){
-								console.log("repo: " + value.name + " has topic: opencv");
-								list_cv_projects.push(value);
-							}          	
-          }); 
-        }); 
+        //console.log(rows); 
+        rowsInRepo = rows;
+				//console.log(rowsInRepo);
 
-		var title = document.createElement('h1');
-        title.textContent  = "Projects";
-        
-
-		// var title = document.createElement('h');
-		// title = "Projects"
-		title.id = 'title_header';
-        var sub_div0 = document.createElement('div');
-		sub_div0.appendChild(title);
-        document.getElementById('output').appendChild(sub_div0);
-				
-		var sub_title = document.createElement('h');
-		sub_title.id = 'subtitle_header';
-
-        sub_title = "Computer Vision";
-        var sub_div1 = document.createElement('div');
-		sub_div1.appendChild(document.createTextNode(sub_title));
-        document.getElementById('output').appendChild(sub_div1);
-				
-		tbl2 = groupTable(list_cv_projects);
-
-		var sub_div2 = document.createElement('div');
-		sub_div2.appendChild(tbl2);
-		document.getElementById('output').appendChild(sub_div2);
-
-		sub_title = "Other";
-        var sub_div3 = document.createElement('div');
-		sub_div3.appendChild(document.createTextNode(sub_title));
-        document.getElementById('output').appendChild(sub_div3);
-		
-		console.log(list_cv_projects);
-		var i = 0, len = list_cv_projects.length;
-		while (i < len) {
-				// your code
-				i++;
-				console.log("yea");
-		}
-				
-        data.forEach(obj => {
-          Object.entries(obj).forEach(([key, value]) => {
-
-          	
-
-          		if(value.name=='danieltobon43.github.io' || value.name == 'danielTobon43'){
-          			return;
-          		}
-                      
-	            if (col == 0){
-	            
-	              var div1 = document.createElement("div");  
-	              var div2 = document.createElement("div"); 
-	              var div3 = document.createElement("div"); 
-								<!-- div2.setAttribute("id", "Div2"); -->
-								
-								div2.id = "Div2";						
-							
-							
-
-	              // div1.classList.add('center');
-	              div2.classList.add('center');
-	              div3.classList.add('center');
-
-	              var td = table.rows[row].cells[0];
-	              var img = document.createElement("img");             
-	              img.src = value.images;              
-	              img.onclick = function() {
-	                window.location.href = value.url;
-	              }
-	              var a = document.createElement('a');
-	              var linkText = document.createTextNode(value.name);
-	              a.appendChild(linkText);
-	              a.title = value.name;
-	              a.href = value.url;
-	              div1.appendChild(img);
-	              div2.appendChild(a);              
-	              div3.appendChild(document.createTextNode(value.description));
-	              td.appendChild(div1)
-	              td.appendChild(div2)
-	              td.appendChild(div3)
-	              col++;  
-	            
-	            }else{
-	              var div1 = document.createElement("div");  
-	              var div2 = document.createElement("div"); 
-	              var div3 = document.createElement("div");    
-
-	              div2.classList.add('center');
-	              div3.classList.add('center');
-
-	              var td = table.rows[row].cells[1];
-	              var img = document.createElement("img");
-	              img.src = value.images;
-	              var a = document.createElement('a');
-	              var linkText = document.createTextNode(value.name);
-	              a.appendChild(linkText);
-	              a.title = value.name;
-	              a.href = value.url;
-	              
-	              div1.appendChild(img);
-	              div2.appendChild(a);
-	              div3.appendChild(document.createTextNode(value.description));
-	              td.appendChild(div1)
-	              td.appendChild(div2)
-	              td.appendChild(div3)
-	              
-	             
-	              col=0;
-	              row++;        
-	            
-	            }       
-
-          	
-
-          	
-          }); 
-        }); 
-
+      },
       
-        // document.body.appendChild(table);     
-        document.getElementById('output').appendChild(table);
-        // document.getElementById('output').innerHTML = table;
-      },
-      error: function(error) {
-        //What do you want to do with the error?
-        document.getElementById('output2').innerHTML = "error nene";
-      },
-    }); 
+    });  
+		
+		return rowsInRepo;
+}
+
+</script>
+
+<script>
+
+  function tableFillData(){
+    var url = "https://danieltobon43.pythonanywhere.com/projects";   
+
+    var rowsInRepo = getTotalRepos(url);		
+	console.log("total repos: ",rowsInRepo);
+		
+    var totalRepos = document.getElementById("numRepos");
+	var contentVar = totalRepos.textContent;
+	console.log("number in div: ",contentVar);
+	if (contentVar == 0 || contentVar < rowsInRepo){
+	    console.log("ADDING NEW REPOS...");
+			//document.getElementById("numRepos").textContent = 32;
+			
+		 
+
+	    $.ajax({
+	      method: "GET",
+	      cache: false,
+	      url: url,
+	      dataType: "json",
+	      async : false, 
+	      success: function(data) {
+
+	        var key=0
+	        var rows = 0;
+	        for(key in data.projects) {
+	          if(data.projects.hasOwnProperty(key)) {
+	            rows++;
+	          }
+	        }
+	        
+	        console.log(rows); 
+
+	        
+
+
+	        data = JSON.stringify([data.projects]);    
+	        data = JSON.parse(data);
+	        
+	        table = tableCreate("table",rows,2);
+	        
+	        var row = 0;
+	        var col = 0;   
+					
+					var list_cv_projects = [];
+					
+					data.forEach(obj => {
+	          Object.entries(obj).forEach(([key, value]) => {
+	          		if (value.topics.includes('opencv')){
+									console.log("repo: " + value.name + " has topic: opencv");
+									list_cv_projects.push(value);
+								}          	
+	          }); 
+	        }); 
+
+			var title = document.createElement('h1');
+	        title.textContent  = "Projects";
+	        
+
+			// var title = document.createElement('h');
+			// title = "Projects"
+			title.id = 'title_header';
+	        var sub_div0 = document.createElement('div');
+			sub_div0.appendChild(title);
+	        document.getElementById('output').appendChild(sub_div0);
+					
+			var sub_title = document.createElement('h');
+			sub_title.id = 'subtitle_header';
+
+	        sub_title = "Computer Vision";
+	        var sub_div1 = document.createElement('div');
+			sub_div1.appendChild(document.createTextNode(sub_title));
+	        document.getElementById('output').appendChild(sub_div1);
+					
+			tbl2 = groupTable(list_cv_projects);
+
+			var sub_div2 = document.createElement('div');
+			sub_div2.appendChild(tbl2);
+			document.getElementById('output').appendChild(sub_div2);
+
+			sub_title = "Other";
+	        var sub_div3 = document.createElement('div');
+			sub_div3.appendChild(document.createTextNode(sub_title));
+	        document.getElementById('output').appendChild(sub_div3);
+			
+			console.log(list_cv_projects);
+			var i = 0, len = list_cv_projects.length;
+			while (i < len) {
+					// your code
+					i++;
+					console.log("yea");
+			}
+					
+	        data.forEach(obj => {
+	          Object.entries(obj).forEach(([key, value]) => {
+
+	          	
+
+	          		if(value.name=='danieltobon43.github.io' || value.name == 'danielTobon43'){
+	          			return;
+	          		}
+	                      
+		            if (col == 0){
+		            
+		              var div1 = document.createElement("div");  
+		              var div2 = document.createElement("div"); 
+		              var div3 = document.createElement("div"); 
+									<!-- div2.setAttribute("id", "Div2"); -->
+									
+									div2.id = "Div2";						
+								
+								
+
+		              // div1.classList.add('center');
+		              div2.classList.add('center');
+		              div3.classList.add('center');
+
+		              var td = table.rows[row].cells[0];
+		              var img = document.createElement("img");             
+		              img.src = value.images;              
+		              img.onclick = function() {
+		                window.location.href = value.url;
+		              }
+		              var a = document.createElement('a');
+		              var linkText = document.createTextNode(value.name);
+		              a.appendChild(linkText);
+		              a.title = value.name;
+		              a.href = value.url;
+		              div1.appendChild(img);
+		              div2.appendChild(a);              
+		              div3.appendChild(document.createTextNode(value.description));
+		              td.appendChild(div1)
+		              td.appendChild(div2)
+		              td.appendChild(div3)
+		              col++;  
+		            
+		            }else{
+		              var div1 = document.createElement("div");  
+		              var div2 = document.createElement("div"); 
+		              var div3 = document.createElement("div");    
+
+		              div2.classList.add('center');
+		              div3.classList.add('center');
+
+		              var td = table.rows[row].cells[1];
+		              var img = document.createElement("img");
+		              img.src = value.images;
+		              var a = document.createElement('a');
+		              var linkText = document.createTextNode(value.name);
+		              a.appendChild(linkText);
+		              a.title = value.name;
+		              a.href = value.url;
+		              
+		              div1.appendChild(img);
+		              div2.appendChild(a);
+		              div3.appendChild(document.createTextNode(value.description));
+		              td.appendChild(div1)
+		              td.appendChild(div2)
+		              td.appendChild(div3)
+		              
+		             
+		              col=0;
+		              row++;        
+		            
+		            }       
+
+	          	
+
+	          	
+	          }); 
+	        }); 
+
+	      
+	        // document.body.appendChild(table);     
+	        document.getElementById('output').appendChild(table);
+	        // document.getElementById('output').innerHTML = table;
+	      },
+	      error: function(error) {
+	        //What do you want to do with the error?
+	        document.getElementById('output2').innerHTML = "error nene";
+	      },
+	    }); 
+		totalRepos.textContent = rowsInRepo;
+
+	}else{
+			console.log("NOT NEW REPOS!");
+	     
+	        return false;
+	} 
 
   }
   
